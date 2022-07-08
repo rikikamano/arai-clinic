@@ -1,71 +1,96 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import '../styles/global.css';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Tailwind css だこれ</h1>
-		<h1 class="text-9xl">Tailwind<h1>
-		<ul role="list" class="link-card-grid">
-			<Card href="https://docs.astro.build/" title="Documentation" body="Learn how Astro works and explore the official API docs." /> 
-			<Card href="https://astro.build/integrations/" title="Integrations" body="Supercharge your project with new frameworks and libraries." /> 
-			<Card href="https://astro.build/themes/" title="Themes" body="Explore a galaxy of community-built starter themes." /> 
-			<Card href="https://astro.build/chat/" title="Chat" body="Come say hi to our amazing Discord community. ❤️" />
-		</ul>
-	</main>
-</Layout>
+<body class="wrap">
+	<section class="header-label content">
+		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます、<br>
+			ご来院の際は採尿に備えてお越しください</p>
+	</section>
+	<section class="main-image content">
+			<img src="./top_image_logo.png">
+			<p class="main-image-text">患者様の笑顔のために <br>よりそう診療を目指して<p/>
+	</section>
+	<section class="content">
+		<h1>aaaaaaaaaaaaaaaa</h1>
+	</section>
+	<section class="content">
+		<h1>aaaaaaaaaaaaaaaa</h1>
+	</section>
+</body>
 
 <style>
-	@tailwind base;
-@tailwind components;
-@tailwind utilities;
-	:root {
-		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
-	}
 
-	main {
-		margin: auto;
-    	padding: 1em;
-		max-width: 60ch;
-	}
+.wrap {
+	background: #F5F5F7;
+	display: block;
+}
+.content {
+	padding: 0px;
+}
 
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
+.main-image {
+	position: relative;
+	width:100vw;
+	height: 416px;
+	left: 0px;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display: flex;
+	flex-direction:column;
+ 	align-items: center;
+	justify-content: center;	
 
-	@keyframes pulse {
-		0%, 100% { background-position-y: 0%; }
-		50% { background-position-y: 80%; }
-	}
+	background-image: url("./top_image.jpeg");
+	background-size: cover;
+}
+.main-image-text {
+	font-family: 'Noto Sans JP';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 42px;
+	padding: auto;
 
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		background: #4F39FA;
-		padding: 1.0rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
-	}
+	/* Light/Base/Purewhite */
+	color: #FFFFFF;
+	text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+}
 
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+.main-image-container {
+	display:-webkit-flex;
+	display: flex;
+	flex-direction:column;
+ 	align-items: center;
+	margin:0 auto;
+}
+
+.header-label {
+	background: #1A1C1C;
+	position: relative;
+	height: 68px;
+	left: 0%;
+	right: 0%;
+	top: 0px;
+}
+
+.header-label-text {
+	position: absolute;
+	height: 44px;
+	left: 38px;
+	right: 37px;
+	top: 12px;
+
+	font-family: 'Noto Sans JP';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 22px;
+	/* or 183% */
+
+	text-align: center;
+
+	color: #F5F5F7;
+}
+
 </style>
