@@ -13,17 +13,17 @@ import '../styles/global.css';
 	</section>
 	
 	<section class="wrap2">
-		<section class="wrap2-1 wrap-item">
+		<section class="wrap2-notification wrap-item">
 			<p class="notify title">お知らせ</p>
 			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frankingcom%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=220061762493679" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 		</section>
 	
-		<section class="wrap2-2 wrap-item">
+		<section class="wrap2-introduction wrap-item">
 			<p class="introduction title">院長紹介</p>
-			<img src="./images/top_image.jpeg">
+			<img class="introduction-image" src="./images/top_image.jpeg">
 			<p class="introduction-job">院長</p>
 			<p class="introduction-name">新井浩樹</p>
-			<p class="introduction-description">自己紹介自己紹介自己紹介</p>
+			<p class="introduction-description">自己自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介</p>
 		</section>
 		<section class="wrap2-3 wrap-item">
 			<p class="clinic-point title">クリニック案内</p>
@@ -87,7 +87,7 @@ import '../styles/global.css';
 					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
 				</div>
 			</div>
-			
+
 			<div class="wrap-row-treatment">
 				<div class="treatment-content">
 					<img class="treatment-image" src="./images/dignosis2.jpeg">
@@ -243,9 +243,47 @@ import '../styles/global.css';
 		flex-direction: column;
 		justify-content: flex-start; 	
 	}
-	.wrap2-1 {
+	.wrap2-notification {
 		padding-top: 10vw;
 
+	}
+	.wrap2-introduction {
+		background: #FFFFFF;
+		border-radius: 40px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.introduction-image {
+		border-radius: 40px;
+	}
+	.introduction-job {
+		font-family: 'Noto Sans JP';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2vw;
+		line-height: 4vw;
+		color: rgba(0, 0, 0, 0.6);
+		padding-top: 48px;
+	}
+	.introduction-name {
+		font-family: 'Noto Sans JP';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 4.5vw;
+		line-height: 4vw;
+		color: rgba(0, 0, 0, 0.86);
+		padding-top: 32px;
+	}
+	.introduction-description {
+		font-family: 'Noto Sans JP';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5vw;
+		line-height: 5vw;
+		color: rgba(0, 0, 0, 0.6);
+		padding-top: 48px;
 	}
 	.clinic-point-content {
 		position: relative;
