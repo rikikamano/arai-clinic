@@ -12,11 +12,38 @@ import '../styles/global.css';
 			<p class="main-image-text">患者様の笑顔のために <br>よりそう診療を目指して<p/>
 	</section>
 	<section class="content">
-		<h1>ああああああhhああ</h1>
+		<h1>ああああああhhssああ</h1>
 	</section>
 	<section class="content">
-		<h1>穴っっっっdddっっｒ</h1>
+		<h1>ddd</h1>
 	</section>
+	<section class="slide-content">
+		<img class="slide-image" src="./images/clinic.jpeg">
+		<img class="slide-image" src="./images/clinic.jpeg">
+		<img class="slide-image" src="./images/clinic.jpeg">
+		<img class="slide-image" src="./images/clinic.jpeg">
+		<img class="slide-image" src="./images/clinic.jpeg">
+	</section>
+	<div class="wrap2">
+		<div class="wrap2-1">
+			<div class="wrap2-1-1">
+				<p class="notify-title">お知らせ</p>
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F20531316728%2Fposts%2F10154009990506729%2F&width=500&show_text=true&height=274&appId" width="500" height="274" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+			</div>
+			<div class="wrap2-1-2">
+				<p class="introduction-title">院長紹介</p>
+				<div class="wrap2-1-2-1">
+				</div>
+			</div>
+		</div>
+
+	</div>
+<footer>
+	<div class="home-access-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8278403085565!2d139.6306908149484!3d35.60731308021156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5383b3619e9%3A0xc0ea50367a13f909!2z44K544K_44O844OQ44OD44Kv44K5IOOCs-ODvOODkuODvCDkuozlrZDnjonlt53lhazlnJLlupc!5e0!3m2!1sja!2sjp!4v1660041568468!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+		
 </body>
 
 <style>
@@ -24,9 +51,6 @@ import '../styles/global.css';
 .wrap {
 	background: #F5F5F7;
 	display: block;
-}
-.content {
-	padding: 0px;
 }
 
 .main-image {
@@ -82,6 +106,52 @@ import '../styles/global.css';
 	text-align: center;
 
 	color: #F5F5F7;
+}
+
+.slide-content {
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display: flex;
+	flex-direction:row;
+	padding-top: 16px;
+	gap: 16px;
+}
+.slide-image {
+	height: 120px;
+	border-radius: 8px;
+}
+.wrap2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+}
+.wrap2-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 64px;
+}
+.wrap2-1-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+}
+.wrap2-1-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 56px 32px;
+	gap: 40px;
+
+	width: 1086px;
+	background: #FFFFFF;
+	border-radius: 24px;
 }
 
 </style>
