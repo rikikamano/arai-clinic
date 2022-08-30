@@ -28,16 +28,79 @@ import '../styles/global.css';
 		<section class="wrap2-3 wrap-item">
 			<p class="clinic-point title">クリニック案内</p>
 			<div class="wrap-image-clinic">
-				<span>最高の病院<span>
-				<img src="./images/clinic.jpeg">
-				<span>最高の病院<span>
-				<img src="./images/clinic.jpeg">
-				<span>最高の病院<span>
-				<img src="./images/clinic.jpeg">
+				<div class="clinic-point-content">
+					<span class="clinic-point-text">最高の病院</span>
+					<img class="clinic-point-image" src="./images/clinic.jpeg">
+				</div>
+
+				<div class="clinic-point-content">
+					<span class="clinic-point-text">最高の病院</span>
+					<img class="clinic-point-image" src="./images/clinic.jpeg">
+				</div>
+
+				<div class="clinic-point-content">
+					<span class="clinic-point-text">最高の病院</span>
+					<img class="clinic-point-image" src="./images/clinic.jpeg">
+				</div>
 			</div>
 		</section>
 		<section class="wrap2-4 wrap-item">
-			<p class="introduction title">症状ごとのご案内と<br>診察の流れ</p>
+			<p class="treatment title">診療内容</p>
+			<div class="wrap-row-treatment">
+				<div class="treatment-content">
+					<img class="treatment-image" src="./images/dignosis2.jpeg">
+					<p class="treatment-sub-title">男性泌尿器科</p>
+					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+				</div>
+
+				<div class="treatment-content">
+					<img class="treatment-image" src="./images/dignosis2.jpeg">
+					<p class="treatment-sub-title">男性泌尿器科</p>
+					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+				</div>
+			</div>
+
+			<div class="wrap-row-treatment">
+				<div class="treatment-content">
+					<img class="treatment-image" src="./images/dignosis2.jpeg">
+					<p class="treatment-sub-title">男性泌尿器科</p>
+					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+				</div>
+
+				<div class="treatment-content">
+					<img class="treatment-image" src="./images/dignosis2.jpeg">
+					<p class="treatment-sub-title">男性泌尿器科</p>
+					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+				</div>
+			</div>
+
+			<div class="wrap-row-treatment">
+				<div class="treatment-content">
+					<img class="treatment-image" src="./images/dignosis2.jpeg">
+					<p class="treatment-sub-title">男性泌尿器科</p>
+					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+				</div>
+
+				<div class="treatment-content">
+					<img class="treatment-image" src="./images/dignosis2.jpeg">
+					<p class="treatment-sub-title">男性泌尿器科</p>
+					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+				</div>
+			</div>
+			
+			<div class="wrap-row-treatment">
+				<div class="treatment-content">
+					<img class="treatment-image" src="./images/dignosis2.jpeg">
+					<p class="treatment-sub-title">男性泌尿器科</p>
+					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+				</div>
+
+				<div class="treatment-content">
+					<img class="treatment-image" src="./images/dignosis2.jpeg">
+					<p class="treatment-sub-title">男性泌尿器科</p>
+					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+				</div>
+			</div>
 		</section>
 	</section>
 <footer class="wrap-item">
@@ -119,7 +182,7 @@ import '../styles/global.css';
 		flex-direction:column;
 		align-items: center;
 		justify-content: center;
-		background-image: url(./images/top_image.png);
+		background-image: url(./images/top-green.png);
 		background-size: auto 100%;
 
 	}
@@ -130,8 +193,6 @@ import '../styles/global.css';
 		font-size: 6vw;
 		line-height: 12vw;
 		padding-top: 3vw;
-
-		/* Light/Base/Purewhite */
 		color: #FFFFFF;
 		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
 	}
@@ -158,7 +219,7 @@ import '../styles/global.css';
 		display: flex;
 		flex-direction: column;
 		padding: 64px;
-		gap: 64px;
+		gap: 240px;
 	}
 
 	iframe { 
@@ -170,12 +231,12 @@ import '../styles/global.css';
 		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 5vw;
+		font-size: 6vw;
 		color: rgba(0, 0, 0, 0.87);
 
 		position: relative;
 		left: 0vw;
-		padding-bottom: 6vw;
+		padding-bottom: 8vw;
 	}
 	.wrap-item {
 		display: flex;
@@ -185,6 +246,61 @@ import '../styles/global.css';
 	.wrap2-1 {
 		padding-top: 10vw;
 
+	}
+	.clinic-point-content {
+		position: relative;
+	}
+	.clinic-point-text {
+		position: absolute;
+		top: 100vw;
+		left: 6vw;
+
+		font-family: 'Noto Sans JP';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 7vw;
+		line-height: 35px;
+		color: #121212;
+	}
+	.clinic-point-image {
+		width: 86vw;
+		height: 120vw;
+		border-radius: 40px;
+	}
+	.wrap-image-clinic {
+		display: flex;
+		flex-direction: column;
+		gap: 128px;
+
+	}
+	.wrap-row-treatment {
+		display: flex;
+		flex-direction: row;
+		gap: 64px;
+		padding-bottom: 64px;
+	}
+	.treatment-image {
+		width: 40vw;
+		height: 40vw;
+		border-radius: 40px;
+	}
+	.treatment-sub-title {
+		font-family: 'Noto Sans JP';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 4vw;
+		line-height: 4vw;
+		color: rgba(0, 0, 0, 0.87);
+		padding-top: 40px;
+	}
+	.treatment-description {
+		font-family: 'Noto Sans JP';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 2.5vw;
+		line-height: 4vw;
+		color: rgba(0, 0, 0, 0.87);
+		padding-top: 24px;
 	}
 	.sub-title {
 		font-family: 'Noto Sans JP';
