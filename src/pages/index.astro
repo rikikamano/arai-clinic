@@ -7,10 +7,13 @@ import '../styles/global.css';
 		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます、<br>
 			ご来院の際は採尿に備えてお越しください</p>
 	</section>
+
 	<section class="main-image content">
+		<img class="main-image-content" src="./images/top-green.png">
+		<span class="main-image-text">患者様の笑顔のために <br>よりそう診療を目指して</span>
 		<img class="main-logo" src="./images/top_image_logo.png">
-		<p class="main-image-text">患者様の笑顔のために <br>よりそう診療を目指して<p/>
 	</section>
+
 	<div class="button-body">
 		<a class="button-content1" href="tel:09000000000">
 			<img class="button-image" src="./images/phone.png">
@@ -193,11 +196,18 @@ import '../styles/global.css';
 		flex-direction:column;
 		align-items: center;
 		justify-content: center;
-		background-image: url('./images/top-green.png');
-		background-size: auto 100%;
-
+		/* background-image: url('./images/top-green.png'); */
+		/* background-size: auto 100%; */
+	}
+	.main-image-content {
+		width: 100vw;
+		height: 340vh;
+		object-fit: cover;
 	}
 	.main-image-text {
+		position: absolute;
+		top: 64vw;
+		left: 20vw;
 		font-weight: 900;
 		font-size: 6vw;
 		line-height: 12vw;
@@ -206,6 +216,9 @@ import '../styles/global.css';
 		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
 	}
 	.main-logo {
+		position: absolute;
+		top: 54vw;
+		left: 27vw;
 		height: 10vw;
 	}
 
@@ -351,7 +364,6 @@ import '../styles/global.css';
 		height: 120vw;
 		border-radius: 40px;
 		object-fit: cover;
-
 	}
 	.wrap-image-clinic {
 		display: flex;
