@@ -12,11 +12,11 @@ import '../styles/global.css';
 		<p class="main-image-text">患者様の笑顔のために <br>よりそう診療を目指して<p/>
 	</section>
 	<div class="button-body">
-		<a class="button-content" href="tel:09000000000">
+		<a class="button-content1" href="tel:09000000000">
 			<img class="button-image" src="./images/phone.png">
 			<span class="button-text1">電話</span>
 		</a>
-		<a class="button-content" href="https://tol-app.jp/s/5st9gdv0o7t2hxn81l8i/lubj0z">
+		<a class="button-content2" href="https://tol-app.jp/s/5st9gdv0o7t2hxn81l8i/lubj0z">
 			<img class="button-image" src="./images/reserve.png">
 			<span class="button-text2">LINE予約</span>
 		</a>	
@@ -193,7 +193,9 @@ import '../styles/global.css';
 		flex-direction:column;
 		align-items: center;
 		justify-content: center;
-		background-image: url('./images/dignosis1.jpeg');
+		background-image: url('./images/top-green.png');
+		background-size: auto 100%;
+
 	}
 	.main-image-text {
 		font-weight: 900;
@@ -211,7 +213,7 @@ import '../styles/global.css';
 		position: fixed;
 		bottom: 120px;
 		width: 300px;
-		height: 100px;
+		height: 120px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -223,22 +225,34 @@ import '../styles/global.css';
 		border-radius: 120px;
 		z-index: 2;
 	}
-	.button-content {
+	.button-content1 {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding-top: 2vw;
+		padding-bottom: 1vw;
+		width: 100%;
+		height: 100%;
+	}
+	.button-content2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 3vw;
+		padding-left: 1vw;
+		padding-bottom: 1vw;
 		width: 100%;
 		height: 100%;
 	}
 	.button-text1 {
 		font-weight: 500;
-		font-size: 24px;
+		font-size: 30px;
 		color: rgba(0, 0, 0, 0.87);
 		padding-top: 16px;
 	}
 	.button-text2 {
 		font-weight: 500;
-		font-size: 24px;
+		font-size: 28px;
 		color: rgba(0, 0, 0, 0.87);
 		padding-top: 20px;
 	}
