@@ -14,11 +14,15 @@ import '../styles/global.css';
 	<div class="button-body">
 		<button class="button-content">
 			<img class="button-image" src="./images/phone.png">
-			<span class="button-text">電話</span>
+			<a href="tel:09000000000">
+				<span class="button-text">電話</span>
+			</a>>
 		</button>
-		<button class="button-content">
+		<button onclick="loction.href='https://tol-app.jp/s/5st9gdv0o7t2hxn81l8i/lubj0z'" class="button-content">
 			<img class="button-image" src="./images/reserve.png">
-			<span class="button-text">LINE予約</span>
+			<a href="https://tol-app.jp/s/5st9gdv0o7t2hxn81l8i/lubj0z">
+				<span class="button-text">LINE予約</span>
+			</a>
 		</button>
 	</div>
 	
@@ -42,18 +46,18 @@ import '../styles/global.css';
 			<p class="clinic-point title">クリニック案内</p>
 			<div class="wrap-image-clinic">
 				<div class="clinic-point-content">
-					<span class="clinic-point-text">最高の病院</span>
-					<img class="clinic-point-image" src="./images/clinic.jpeg">
+					<span class="clinic-point-text1">臨床経験豊富な医師に<br>気軽に相談可能</span>
+					<img class="clinic-point-image" src="./images/clinic-point1.jpeg">
+				</div>
+
+				<div class="clinic-point-content">
+					<span class="clinic-point-text">アットホームな病院</span>
+					<img class="clinic-point-image" src="./images/clinic-point2.jpeg">
 				</div>
 
 				<div class="clinic-point-content">
 					<span class="clinic-point-text">最高の病院</span>
-					<img class="clinic-point-image" src="./images/clinic.jpeg">
-				</div>
-
-				<div class="clinic-point-content">
-					<span class="clinic-point-text">最高の病院</span>
-					<img class="clinic-point-image" src="./images/clinic.jpeg">
+					<img class="clinic-point-image" src="./images/clinic-point3.jpeg">
 				</div>
 			</div>
 		</section>
@@ -152,6 +156,7 @@ import '../styles/global.css';
 @media screen and (max-width: 1280px) {
 
 	body {
+		font-family: 'Noto Sans JP', sans-serif;
 		background: #F5F5F7;
 		width: 100vw;
 		display: flex;
@@ -175,7 +180,6 @@ import '../styles/global.css';
 		right: 37px;
 		top: 3vw;
 
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 700;
 		font-size: 2vw;
@@ -200,7 +204,6 @@ import '../styles/global.css';
 
 	}
 	.main-image-text {
-		font-family: "Noto Sans JP", sans-serif;
 		font-style: normal;
 		font-weight: 900;
 		font-size: 6vw;
@@ -237,7 +240,6 @@ import '../styles/global.css';
 		height: 100%;
 	}
 	.button-text {
-		font-family: "Noto Sans JP", sans-serif;
 		font-style: normal;
 		font-weight: 500;
 		font-size: 24px;
@@ -248,21 +250,6 @@ import '../styles/global.css';
 		width: 40px;
 		padding-top: 12px;
 	}
-
-	/* .slide-content {
-		overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
-	padding: 0 0 12px 8px;
-	display: -ms-flexbox;
-	display: flex; 
-		padding-top: 16px;
-		gap: 16px;
-
-	}
-	.slide-image {
-		height: 20vw;
-		border-radius: 8px;
-	} */
 
 	.wrap2 {
 		display: flex;
@@ -277,7 +264,6 @@ import '../styles/global.css';
 	}
 
 	.title {
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 700;
 		font-size: 6vw;
@@ -310,7 +296,6 @@ import '../styles/global.css';
 		border-radius: 40px;
 	}
 	.introduction-job {
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 500;
 		font-size: 2vw;
@@ -319,7 +304,6 @@ import '../styles/global.css';
 		padding-top: 64px;
 	}
 	.introduction-name {
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 700;
 		font-size: 4.5vw;
@@ -328,7 +312,6 @@ import '../styles/global.css';
 		padding-top: 32px;
 	}
 	.introduction-description {
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 500;
 		font-size: 2vw;
@@ -339,12 +322,22 @@ import '../styles/global.css';
 	.clinic-point-content {
 		position: relative;
 	}
+	.clinic-point-text1 {
+		position: absolute;
+		top: 90vw;
+		left: 6vw;
+
+		font-style: normal;
+		font-weight: 700;
+		font-size: 7vw;
+		line-height: 10vw;
+		color: #121212;
+	}
 	.clinic-point-text {
 		position: absolute;
 		top: 100vw;
 		left: 6vw;
 
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 700;
 		font-size: 7vw;
@@ -355,6 +348,8 @@ import '../styles/global.css';
 		width: 86vw;
 		height: 120vw;
 		border-radius: 40px;
+		object-fit: cover;
+
 	}
 	.wrap-image-clinic {
 		display: flex;
@@ -374,7 +369,6 @@ import '../styles/global.css';
 		border-radius: 40px;
 	}
 	.treatment-sub-title {
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 500;
 		font-size: 4vw;
@@ -383,7 +377,6 @@ import '../styles/global.css';
 		padding-top: 40px;
 	}
 	.treatment-description {
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 2.5vw;
@@ -392,7 +385,6 @@ import '../styles/global.css';
 		padding-top: 24px;
 	}
 	.sub-title {
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 700;
 		font-size: 3vw;
@@ -401,7 +393,6 @@ import '../styles/global.css';
 		padding-bottom: 24px;
 	}
 	.content {
-		font-family: 'Noto Sans JP';
 		font-style: normal;
 		font-weight: 500;
 		font-size: 3vw;
