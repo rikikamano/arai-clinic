@@ -1,5 +1,5 @@
 ---
-import '@fontsource/noto-sans-jp';
+// import '@fontsource/noto-sans-jp';
 
 export interface Props {
 	title: string;
@@ -25,6 +25,8 @@ const { title } = Astro.props as Props;
 
 <style>
 
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+
   :root {
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem); 
@@ -35,7 +37,6 @@ const { title } = Astro.props as Props;
   }
 
   html {
-    font-family: system-ui, sans-serif;
     font-size: var(--font-size-base);
     color: var(--color-text);
     background-color: var(--color-bg);
