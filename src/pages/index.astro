@@ -160,12 +160,13 @@ import '../styles/global.css';
 	}
 	.header-label {
 		background: #1A1C1C;
-		position: relative;
+		position: fixed;
 		width: 100vw;
 		height: 12vw;
 		left: 0%;
 		right: 0%;
 		top: 0px;
+		z-index: 2;
 	}
 
 	.header-label-text {
@@ -173,7 +174,7 @@ import '../styles/global.css';
 		height: 4px;
 		left: 38px;
 		right: 37px;
-		top: 3vw;
+		top: 4vw;
 		font-weight: 700;
 		font-size: 2vw;
 		line-height: 3vw;
@@ -192,7 +193,7 @@ import '../styles/global.css';
 		flex-direction:column;
 		align-items: center;
 		justify-content: center;
-		background-image: url(./images/top-green.png);
+		background-image: image-url('./images/top-green.png');
 		background-size: auto 100%;
 
 	}
