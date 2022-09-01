@@ -3,6 +3,7 @@ import '../styles/global.css';
 ---
 
 <body class="wrap">
+
 	<section class="header-label content">
 		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます、<br>
 			ご来院の際は採尿に備えてお越しください</p>
@@ -11,7 +12,7 @@ import '../styles/global.css';
 	<section class="main-image content">
 		<img class="main-image-content" src="./images/top-green.png">
 		<span class="main-image-text">患者様の笑顔のために <br>よりそう診療を目指して</span>
-		<img class="main-logo" src="./images/top_image_logo.png">
+		<img class="main-logo" src="./images/top-image-logo.png">
 	</section>
 
 	<div class="button-body">
@@ -46,17 +47,17 @@ import '../styles/global.css';
 			<div class="wrap-image-clinic">
 				<div class="clinic-point-content">
 					<span class="clinic-point-text1">臨床経験豊富な医師に<br>気軽に相談可能</span>
-					<img class="clinic-point-image" src="./images/clinic-point1.jpeg">
+					<img class="clinic-point-image" src="./images/clinic-point1.png">
 				</div>
 
 				<div class="clinic-point-content">
 					<span class="clinic-point-text">アットホームな病院</span>
-					<img class="clinic-point-image" src="./images/clinic-point2.jpeg">
+					<img class="clinic-point-image" src="./images/clinic-point2.png">
 				</div>
 
 				<div class="clinic-point-content">
 					<span class="clinic-point-text">最新の設備が充実</span>
-					<img class="clinic-point-image" src="./images/clinic-point3.jpeg">
+					<img class="clinic-point-image" src="./images/clinic-point3.png">
 				</div>
 			</div>
 		</section>
@@ -197,10 +198,7 @@ import '../styles/global.css';
 		display:-ms-flexbox;
 		display: flex;
 		flex-direction:column;
-		align-items: center;
-		justify-content: center;
-		/* background-image: url('./images/top-green.png'); */
-		/* background-size: auto 100%; */
+		justify-content: flex-start;
 	}
 	.main-image-content {
 		width: 100vw;
@@ -210,18 +208,19 @@ import '../styles/global.css';
 	.main-image-text {
 		position: absolute;
 		top: 30vh;
+		left: 9vw;
 		font-weight: 900;
 		font-size: 6vw;
 		line-height: 12vw;
-		padding-top: 3vw;
+		padding-top: 1vw;
 		color: #FFFFFF;
 		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
 	}
 	.main-logo {
 		position: absolute;
 		top: 24vh;
-		left: 27vw;
 		height: 10vw;
+		left: 9vw;
 	}
 
 	.button-body {
@@ -350,7 +349,7 @@ import '../styles/global.css';
 		font-weight: 700;
 		font-size: 7vw;
 		line-height: 10vw;
-		color: #121212;
+		color: #FFFFFF;
 	}
 	.clinic-point-text {
 		position: absolute;
@@ -359,7 +358,7 @@ import '../styles/global.css';
 		font-weight: 700;
 		font-size: 7vw;
 		line-height: 35px;
-		color: #121212;
+		color: #FFFFFF;
 	}
 	.clinic-point-image {
 		width: 86vw;
