@@ -39,7 +39,7 @@ import '../styles/global.css';
 			<p class="introduction-name">新井浩樹</p>
 			<p class="introduction-description">この度ご縁があり、いわもと泌尿器科を継承させていただくこととなりました新井浩樹です。<br><br>
 				1997年に大阪大学医学部医学科を卒業後、25年間に渡り6つの総合病院で臨床経験を積んで参りました。<br><br>これまでの経験を活かし、ご来院くださるすべての患者様に信頼される医療を提供できますよう日々の精進を欠かさず頑張っていく決意でございます。
-				些細なことでもお気軽にご相談ください！!
+				些細なことでもお気軽にご相談ください！
 				</p>
 		</section>
 		<section class="wrap2-3 wrap-item">
@@ -62,7 +62,8 @@ import '../styles/global.css';
 			</div>
 		</section>
 		<section class="wrap2-4 wrap-item">
-			<p class="treatment title">診療内容</p>
+			<p class="treatment title">診療内容と流れ</p>
+			<img class='clinic-flow-image' src="./images/clinic-flow.png">
 			<div class="wrap-row-treatment">
 				<div class="treatment-content">
 					<img class="treatment-image" src="./images/dignosis1.jpeg">
@@ -214,7 +215,7 @@ import '../styles/global.css';
 		line-height: 12vw;
 		padding-top: 1vw;
 		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 	}
 	.main-logo {
 		position: absolute;
@@ -317,6 +318,7 @@ import '../styles/global.css';
 	}
 	.introduction-image {
 		border-radius: 40px;
+		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
 	}
 	.introduction-job {
 		font-weight: 500;
@@ -365,12 +367,18 @@ import '../styles/global.css';
 		height: 120vw;
 		border-radius: 40px;
 		object-fit: cover;
+		box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px;
 	}
 	.wrap-image-clinic {
 		display: flex;
 		flex-direction: column;
 		gap: 128px;
 
+	}
+	.clinic-flow-image {
+		width: 100%;
+		padding-top: 40px;
+		padding-bottom: 80px;
 	}
 	.wrap-row-treatment {
 		display: flex;
@@ -383,6 +391,7 @@ import '../styles/global.css';
 		height: 40vw;
 		border-radius: 40px;
 		object-fit: cover;
+		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
 	}
 	.treatment-sub-title {
 		font-weight: 500;
