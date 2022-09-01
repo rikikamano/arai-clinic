@@ -2,31 +2,30 @@
 import '../styles/global.css';
 ---
 
-<body class="wrap">
+<body>
 
-	<section class="header-label content">
-		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます、<br>
-			ご来院の際は採尿に備えてお越しください</p>
-	</section>
+		<section class="header-label content">
+			<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます、<br>
+				ご来院の際は採尿に備えてお越しください</p>
+		</section>
 
-	<section class="main-image content">
-		<img class="main-image-content" src="./images/top-green.png">
-		<span class="main-image-text">患者様の笑顔のために <br>よりそう診療を目指して</span>
-		<img class="main-logo" src="./images/top-image-logo.png">
-	</section>
+		<section class="main-image content">
+			<img class="main-image-content" src="./images/top-green.png">
+			<span class="main-image-text">患者様の笑顔のために <br>よりそう診療を目指して</span>
+			<img class="main-logo" src="./images/top-image-logo.png">
+		</section>
 
-	<div class="button-body">
-		<a class="button-content1" href="tel:09000000000">
-			<img class="button-image" src="./images/phone.png">
-			<span class="button-text1">電話</span>
-		</a>
-		<a class="button-content2" href="https://tol-app.jp/s/5st9gdv0o7t2hxn81l8i/lubj0z">
-			<img class="button-image" src="./images/reserve.png">
-			<span class="button-text2">LINE予約</span>
-		</a>	
-	</div>
-	
-	<section class="wrap2">
+		<div class="button-body">
+			<a class="button-content1" href="tel:09000000000">
+				<img class="button-image" src="./images/phone.png">
+				<span class="button-text1">電話</span>
+			</a>
+			<a class="button-content2" href="https://tol-app.jp/s/5st9gdv0o7t2hxn81l8i/lubj0z">
+				<img class="button-image" src="./images/reserve.png">
+				<span class="button-text2">LINE予約</span>
+			</a>	
+		</div>
+	<section class="wrap1">
 		<section class="wrap2-notification wrap-item">
 			<p class="notify title">お知らせ</p>
 			<a class="twitter-timeline" data-height="400" href="https://twitter.com/okuekimae?ref_src=twsrc%5Etfw">Tweets by okuekimae</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>		
@@ -42,6 +41,9 @@ import '../styles/global.css';
 				些細なことでもお気軽にご相談ください！
 				</p>
 		</section>
+	</section>
+
+	<section class="wrap2">
 		<section class="wrap2-3 wrap-item">
 			<p class="clinic-point title">クリニック案内</p>
 			<div class="wrap-image-clinic">
@@ -61,14 +63,14 @@ import '../styles/global.css';
 				</div>
 			</div>
 		</section>
-		<section class="wrap2-4 wrap-item">
+		<section class="wrap2-treatment wrap-item">
 			<p class="treatment title">診療内容と流れ</p>
 			<img class='clinic-flow-image' src="./images/clinic-flow.png">
 			<div class="wrap-row-treatment">
 				<div class="treatment-content">
 					<img class="treatment-image" src="./images/dignosis1.jpeg">
 					<p class="treatment-sub-title">男性泌尿器科</p>
-					<p class="treatment-description">尿路結石、膀胱がん、腎臓がんなど</p>
+					<p class="treatment-description">尿路結石、膀胱・腎臓がんなど</p>
 				</div>
 
 				<div class="treatment-content">
@@ -121,6 +123,7 @@ import '../styles/global.css';
 			</div>
 		</section>
 	</section>
+
 <footer class="wrap-item">
 	<p class="clinic-info title">クリニック情報</p>
 	<div class="clinic-info-content">
@@ -160,12 +163,42 @@ import '../styles/global.css';
 
 	body {
 		font-family: 'Noto Sans JP', sans-serif;
-		background: #F5F5F7;
 		width: 100vw;
 		display: flex;
 		flex-direction:column;
 		align-items: center;
 	}
+	
+	.wrap1 {
+		background: #F5F5F7;
+		display: flex;
+		flex-direction: column;
+		padding: 64px;
+		gap: 240px;
+	}
+
+	.wrap2 {
+		display: flex;
+		flex-direction: column;
+		padding: 64px;
+		gap: 240px;
+	}
+
+	iframe { 
+		width: 86vw;
+		height: 30vh; 
+	}
+
+	.title {
+		font-weight: 700;
+		font-size: 6vw;
+		color: rgba(0, 0, 0, 0.87);
+
+		position: relative;
+		left: 0vw;
+		padding-bottom: 8vw;
+	}
+
 	.header-label {
 		background: #1A1C1C;
 		position: fixed;
@@ -276,27 +309,6 @@ import '../styles/global.css';
 		padding-top: 12px;
 	}
 
-	.wrap2 {
-		display: flex;
-		flex-direction: column;
-		padding: 64px;
-		gap: 240px;
-	}
-
-	iframe { 
-		width: 86vw;
-		height: 30vh; 
-	}
-
-	.title {
-		font-weight: 700;
-		font-size: 6vw;
-		color: rgba(0, 0, 0, 0.87);
-
-		position: relative;
-		left: 0vw;
-		padding-bottom: 8vw;
-	}
 	.wrap-item {
 		display: flex;
 		flex-direction: column;
@@ -375,20 +387,28 @@ import '../styles/global.css';
 		gap: 128px;
 
 	}
+	.wrap2-treatment {
+		background: #F5F5F7;
+		border-radius: 40px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-left: 4vw;
+	}
 	.clinic-flow-image {
-		width: 100%;
+		width: 88%;
 		padding-top: 40px;
 		padding-bottom: 80px;
 	}
 	.wrap-row-treatment {
 		display: flex;
 		flex-direction: row;
-		gap: 64px;
+		align-items: center;
 		padding-bottom: 64px;
+		gap: 72px;
 	}
 	.treatment-image {
-		width: 40vw;
-		height: 40vw;
+		width: 36vw;
+		height: 36vw;
 		border-radius: 40px;
 		object-fit: cover;
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
@@ -427,6 +447,10 @@ import '../styles/global.css';
 		display: flex;
 		flex-direction: column;
 		gap: 64px;
+	}
+	footer {
+		background: #F5F5F7;
+		padding: 64px;
 	}
 }
 
