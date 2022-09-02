@@ -193,18 +193,18 @@ import '../styles/global.css';
 		<p class="clinic-info title">クリニック情報</p>
 		<div class="clinic-info-content">
 			<div>
-			<p class="map-sub-title">住所</p>
+			<p class="subtitle">住所</p>
 			<p class="map-content">〒669-1323</p>
 			<p class="map-content">兵庫県三田市あかしあ台 1-49-1</p>
 			</div>
 
 			<div>
-			<p class="map-sub-title">電話番号</p>
+			<p class="subtitle">電話番号</p>
 			<p class="map-content">079-553-8886</p>
 			</div>
 
 			<div>
-			<p class="map-sub-title">アクセス</p>
+			<p class="map subtitle">アクセス</p>
 
 			<span class="map-content">
 				三田ウッディタウンのあかしあ台コミュニティハウス前	
@@ -257,9 +257,6 @@ import '../styles/global.css';
 		display: flex;
 		flex-direction:column;
 		align-items: center;
-		-webkit-text-size-adjust: 100%;
-		-moz-text-size-adjust: 100%;
-		text-size-adjust: 100%;
 	}
 	
 	.wrap1 {
@@ -286,10 +283,17 @@ import '../styles/global.css';
 		font-weight: 700;
 		font-size: 6vw;
 		color: rgba(0, 0, 0, 0.87);
-
 		position: relative;
 		left: 0vw;
 		padding-bottom: 8vw;
+	}
+
+	.subtitle {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 40px;
+		color: rgba(0, 0, 0, 0.87);
+		padding-bottom: 32px;
 	}
 
 	.header-label {
@@ -540,13 +544,7 @@ import '../styles/global.css';
 		color: rgba(0, 0, 0, 0.87);
 		padding-top: 24px;
 	}
-	.map-sub-title {
-		font-weight: 700;
-		font-size: 32px;
-		line-height: 40px;
-		color: rgba(0, 0, 0, 0.87);
-		padding-bottom: 32px;
-	}
+
 	.map-content {
 		font-weight: 300;
 		font-size: 16px;
