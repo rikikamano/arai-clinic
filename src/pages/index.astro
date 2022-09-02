@@ -42,7 +42,7 @@ import '../styles/global.css';
 
 				<hr>
 
-				<p class="introduction-history">
+				<span class="introduction-history">
 				<p class="introduction-subtitle">経歴、職歴</p>
 				<br><br>
 				●1997 大阪大学医学部医学科　卒業
@@ -74,30 +74,37 @@ import '../styles/global.css';
 				<p class="introduction-job">主な手術件数(25年間の概算)</p>
 				<br><br>
 				●開腹手術
+				<div class="introduction-detail">
 				<p>根治的膀胱全摘除術(膀胱癌の手術) 70</p>
 				<p>根治的前立腺全摘除術(前立腺癌の手術) 50</p>
 				<p>根治的腎摘除術（腎臓癌の手術)30</p>
+				</div>
 				<br><br>
 				●腹腔鏡手術
+				<div class="introduction-detail">
 				<p>腹腔鏡下副腎摘除術(副腎腫瘍の手術) 20</p>
 				<p>腹腔鏡下腎摘除術(腎臓癌の手術) 100</p>
 				<p>腹腔鏡下腎部分切除術(腎臓癌の手術)50</p>
 				<p>腹腔鏡下前立腺全摘除術(前立腺癌の手術) 50</p>
+				</div>		
 				<br><br>
 				●経尿道的手術
+				<div class="introduction-detail">
 				<p>経尿道的膀胱腫瘍切除術(膀胱癌の手術) 1700</p>
 				<p>経尿道的前立腺切除術(前立腺肥大症の手術) 500</p>
 				<p>経尿道的尿路結石破砕術(尿路結石の手術) 1000</p>
-				
 				<p>経尿道的尿管ステント留置術(尿管狭窄の手術) 2000</p>
 				<p>内視内尿道切開術(尿道狭窄の手術)50</p>
+				</div>
 				<br><br>				
 				●その他
+				<div class="introduction-detail">
 				<p>包茎手術　100</p>
 				<p>精巣固定術(小児の停留精巣の手術) 50</p>
 				<p>高位除睾術(精巣癌の手術) 40</p>
 				<p>前立腺生検(前立腺の組織検査) 1500</p>
 				<p>腎瘻増設術(水腎症のカテーテル手術) 100</p>
+				</div>
 				</span>		
 			</span>
 		</section>
@@ -190,7 +197,6 @@ import '../styles/global.css';
 
 	<section class="wrap2-footer wrap-item">
 		<p class="clinic-info title">クリニック情報</p>
-		< class="clinic-info-content">
 			<div>
 			<p class="map-subtitle">住所</p>
 			<p class="map-content">〒669-1323 兵庫県三田市あかしあ台 1-49-1</p>
@@ -450,6 +456,10 @@ import '../styles/global.css';
 		color: rgba(0, 0, 0, 0.56);
 		padding-top: 32px;
 	}
+
+	div.introduction-detail p {
+		padding: 8px 0px;
+	}
 	.clinic-point-content {
 		position: relative;
 	}
@@ -545,6 +555,7 @@ import '../styles/global.css';
 		font-size: 4.5vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-bottom: 32px;
+		padding-top: 32px;
 	}
 
 	.map-content-detail {
