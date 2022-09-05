@@ -708,7 +708,6 @@ import '../styles/global.css';
 
 	.wrap1 {
 		background: #F5F5F7;
-		width: 100vw;
 		display: flex;
 		flex-direction: column;
 		padding: 64px 400px;
@@ -718,7 +717,7 @@ import '../styles/global.css';
 	.wrap2 {
 		display: flex;
 		flex-direction: column;
-		padding: 180px 64px;
+		padding: 64px;
 		gap: 240px;
 	}
 
@@ -739,7 +738,6 @@ import '../styles/global.css';
 	.header-label {
 		background: #2687FF;
 		position: fixed;
-		width: 100vw;
 		height: 5vw;
 		left: 0%;
 		right: 0%;
@@ -762,7 +760,6 @@ import '../styles/global.css';
 
 	.main-image {
 		position: relative;
-		width: 100vw;
 		height: 64vh;
 		left: 0px;
 		display:-webkit-flex;
@@ -778,7 +775,7 @@ import '../styles/global.css';
 	}
 	.main-image-text1 {
 		position: absolute;
-		top: 28vh;
+		top: 20vh;
 		left: 32vw;
 		font-weight: 900;
 		font-size: 3vw;
@@ -789,7 +786,7 @@ import '../styles/global.css';
 	}
 	.main-image-text2 {
 		position: absolute;
-		top: 38vh;
+		top: 30vh;
 		left: 32vw;
 		font-weight: 900;
 		font-size: 3vw;
@@ -798,9 +795,42 @@ import '../styles/global.css';
 		color: #FFFFFF;
 		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 	}
+	.main-image-description1 {
+		position: absolute;
+		top: 42vh;
+		left: 34vw;
+		font-weight: 900;
+		font-size: 3vw;
+		line-height: 12vw;
+		padding-top: 2vw;
+		color: #FFFFFF;
+		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+	}
+	.main-image-description2 {
+		position: absolute;
+		top: 51vh;
+		left: 33vw;
+		font-weight: 500;
+		font-size: 1.5vw;
+		line-height: 12vw;
+		padding-top: 2vw;
+		color: #FFFFFF;
+		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+	}
+	.main-image-description3 {
+		position: absolute;
+		top: 57vh;
+		left: 44vw;
+		font-weight: 700;
+		font-size: 1.5vw;
+		line-height: 12vw;
+		padding-top: 2vw;
+		color: #FFFFFF;
+		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+	}
 	.main-logo {
 		position: absolute;
-		top: 24vh;
+		top: 17vh;
 		height: 6vw;
 		left: 28vw;
 	}
@@ -916,14 +946,14 @@ import '../styles/global.css';
 	.introduction-subtitle {
 		font-weight: 500;
 		font-size: 3vw;
-		line-height: 4vw;
+		line-height: 2vw;
 		color: rgba(0, 0, 0, 0.6);
 		padding-top: 64px;
 	}
 
 	.introduction-history {
 		font-weight: 400;
-		font-size: 2.5vw;
+		font-size: 2vw;
 		line-height: 4vw;
 		color: rgba(0, 0, 0, 0.56);
 		padding-top: 32px;
@@ -954,8 +984,8 @@ import '../styles/global.css';
 		color: #FFFFFF;
 	}
 	.clinic-point-image {
-		width: 32vw;
-		height: 40vw;
+		width: 28vw;
+		height: 38vw;
 		border-radius: 40px;
 		object-fit: cover;
 		box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px;
@@ -963,27 +993,27 @@ import '../styles/global.css';
 	.wrap-image-clinic {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		gap: 12px;
 
 	}
 	.wrap2-flow {
 		background: #F5F5F7;
 		border-radius: 40px;
-		padding-top: 140px;
-		padding-bottom: 80px;
-		padding-left: 4vw;
+		padding: 64px 8vw;
+		flex-direction: column;
+		justify-content: flex-start; 	
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
 	}
 	.clinic-flow-image {
-		width: 72%;
+		width: 24%;
 		padding-top: 160px;
 		padding-bottom: 80px;
 		object-fit: cover;
-		padding-left: 9vw;
 	}
 	.flow-description {
 		font-weight: 500;
-		font-size: 4vw;
+		font-size: 2vw;
 		line-height: 5vw;
 		color: rgba(0, 0, 0, 0.6);
 		padding: 16px 64px;
@@ -997,26 +1027,26 @@ import '../styles/global.css';
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		padding-bottom: 64px;
+		padding: 64px 400px;
 		gap: 7vw;
 	}
 	.treatment-image {
-		width: 40vw;
-		height: 40vw;
+		width: 20vw;
+		height: 20vw;
 		border-radius: 40px;
 		object-fit: cover;
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
 	}
 	.treatment-sub-title {
 		font-weight: 500;
-		font-size: 5vw;
+		font-size: 3vw;
 		line-height: 4vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-top: 40px;
 	}
 	.treatment-description {
 		font-weight: 400;
-		font-size: 3vw;
+		font-size: 1.5vw;
 		line-height: 4vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-top: 24px;
@@ -1024,14 +1054,14 @@ import '../styles/global.css';
 
 	.map-content {
 		font-weight: 500;
-		font-size: 4vw;
+		font-size: 2.5vw;
 		line-height: 6vw;
 		color: rgba(0, 0, 0, 0.64);
 		padding-bottom: 12px;
 	}
 	.map-subtitle {
 		font-weight: 700;
-		font-size: 5vw;
+		font-size: 3vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-bottom: 32px;
 		padding-top: 48px;
@@ -1039,7 +1069,7 @@ import '../styles/global.css';
 
 	.map-content-detail {
 		font-weight: 500;
-		font-size: 4.5vw;
+		font-size: 2.5vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-bottom: 24px;
 	}
@@ -1056,7 +1086,7 @@ import '../styles/global.css';
 	}
 	.wrap2-footer {
 		background: #F5F5F7;
-		padding: 64px;
+		padding-left: 34vw;
 	}
 }
 
