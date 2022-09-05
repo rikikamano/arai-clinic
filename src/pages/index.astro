@@ -5,13 +5,14 @@ import '../styles/global.css';
 <body>
 
 	<section class="header-label content">
-		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます、<br>
+		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます<br>
 			ご来院の際はおしっこをためてお越しください</p>
 	</section>
 
 	<section class="main-image content">
 		<img class="main-image-content" src="./images/top-green.png">
-		<span class="main-image-text">患者様の笑顔のために🍀 <br>🍀よりそう診療を目指して</span>
+		<span class="main-image-text1">患者様の笑顔のために🍀 </span>
+		<span class="main-image-text2">🍀よりそう診療を目指して</span>
 		<img class="main-logo" src="./images/logo.png">
 	</section>
 
@@ -363,21 +364,32 @@ import '../styles/global.css';
 		display:-ms-flexbox;
 		display: flex;
 		flex-direction:column;
-		justify-content: flex-start;
+		align-items: center;
 	}
 	.main-image-content {
 		width: 100vw;
 		height: 80vh;
 		object-fit: cover;
 	}
-	.main-image-text {
+	.main-image-text1 {
 		position: absolute;
 		top: 32vh;
-		left: 9vw;
+		left: 19vw;
 		font-weight: 900;
 		font-size: 6vw;
 		line-height: 12vw;
-		padding-top: 1vw;
+		padding-top: 2vw;
+		color: #FFFFFF;
+		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+	}
+	.main-image-text2 {
+		position: absolute;
+		top: 39vh;
+		left: 12vw;
+		font-weight: 900;
+		font-size: 6vw;
+		line-height: 12vw;
+		padding-top: 2vw;
 		color: #FFFFFF;
 		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 	}
