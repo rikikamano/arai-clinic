@@ -191,76 +191,73 @@ import '../styles/global.css';
 		</section>
 		<section class="wrap2-treatment wrap-item">
 			<p class="treatment title">診療内容</p>
+			<div class="wrap-treatment-flex">
+				<div class="wrap-row-treatment">
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis1.jpeg">
+						<p class="treatment-sub-title">男性泌尿器科</p>
+						<p class="treatment-description">尿路結石、膀胱・腎臓がん</p>
+					</div>
 
-			<div class="wrap-row-treatment">
-				<div class="treatment-content">
-					<img class="treatment-image" src="./images/dignosis1.jpeg">
-					<p class="treatment-sub-title">男性泌尿器科</p>
-					<p class="treatment-description">尿路結石、膀胱・腎臓がん</p>
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis2.jpeg">
+						<p class="treatment-sub-title">女性泌尿器科</p>
+						<p class="treatment-description">膀胱炎、尿もれ</p>
+					</div>
 				</div>
 
-				<div class="treatment-content">
-					<img class="treatment-image" src="./images/dignosis2.jpeg">
-					<p class="treatment-sub-title">女性泌尿器科</p>
-					<p class="treatment-description">膀胱炎、尿もれ</p>
-				</div>
-			</div>
+				<div class="wrap-row-treatment">
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis3.jpeg">
+						<p class="treatment-sub-title">小児泌尿器科</p>
+						<p class="treatment-description">包茎、おねしょ</p>
+					</div>
 
-			<div class="wrap-row-treatment">
-				<div class="treatment-content">
-					<img class="treatment-image" src="./images/dignosis3.jpeg">
-					<p class="treatment-sub-title">小児泌尿器科</p>
-					<p class="treatment-description">包茎、おねしょ</p>
-				</div>
-
-				<div class="treatment-content">
-					<img class="treatment-image" src="./images/dignosis4.jpeg">
-					<p class="treatment-sub-title">漢方外来</p>
-					<p class="treatment-description">泌尿器症状への漢方製剤</p>
-				</div>
-			</div>
-
-			<div class="wrap-row-treatment">
-				<div class="treatment-content">
-					<img class="treatment-image" src="./images/dignosis5.jpeg">
-					<p class="treatment-sub-title">禁煙外来</p>
-					<p class="treatment-description">貼り薬や飲み薬を使って治療</p>
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis4.jpeg">
+						<p class="treatment-sub-title">漢方外来</p>
+						<p class="treatment-description">泌尿器症状への漢方製剤</p>
+					</div>
 				</div>
 
-				<div class="treatment-content">
-					<img class="treatment-image" src="./images/dignosis6.jpeg">
-					<p class="treatment-sub-title">男性更年期</p>
-					<p class="treatment-description">倦怠感・めまい・イライラ</p>
-				</div>
-			</div>
+				<div class="wrap-row-treatment">
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis5.jpeg">
+						<p class="treatment-sub-title">禁煙外来</p>
+						<p class="treatment-description">貼り薬や飲み薬を使って治療</p>
+					</div>
 
-			<div class="wrap-row-treatment">
-				<div class="treatment-content">
-					<img class="treatment-image" src="./images/dignosis7.jpeg">
-					<p class="treatment-sub-title">AGA</p>
-					<p class="treatment-description">生え際後退、薄毛</p>
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis6.jpeg">
+						<p class="treatment-sub-title">男性更年期</p>
+						<p class="treatment-description">倦怠感・めまい・イライラ</p>
+					</div>
 				</div>
 
-				<div class="treatment-content">
-					<img class="treatment-image" src="./images/dignosis8.webp">
-					<p class="treatment-sub-title">ED</p>
-					<p class="treatment-description">勃起不全や維持できない</p>
+				<div class="wrap-row-treatment">
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis7.jpeg">
+						<p class="treatment-sub-title">AGA</p>
+						<p class="treatment-description">生え際後退、薄毛</p>
+					</div>
+
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis8.webp">
+						<p class="treatment-sub-title">ED</p>
+						<p class="treatment-description">勃起不全や維持できない</p>
+					</div>
 				</div>
 			</div>
 		</section>
 	</section>
 
-	<section class="wrap2-footer wrap-item">
-		<p class="clinic-info title">クリニック情報</p>
-			<div>
+	<section class="wrap2-footer wrap-item">  
+		<div class="wrap-footer-pc">
+			<p class="clinic-info title">クリニック情報</p>
 			<p class="map-subtitle">住所</p>
 			<p class="map-content">〒669-1323 兵庫県三田市あかしあ台 1-49-1</p>
-			</div>
-			<div>
 			<p class="map-subtitle">電話番号</p>
 			<p class="map-content">079-553-8886</p>
-			</div>
-			<div>
 			<p class="map-subtitle">アクセス</p>
 			<span class="map-content">
 				三田ウッディタウンのあかしあ台コミュニティハウス前	
@@ -710,7 +707,7 @@ import '../styles/global.css';
 		background: #F5F5F7;
 		display: flex;
 		flex-direction: column;
-		padding: 64px 400px;
+		padding: 64px 500px;
 		gap: 400px;
 	}
 
@@ -728,7 +725,7 @@ import '../styles/global.css';
 
 	.title {
 		font-weight: 700;
-		font-size: 3vw;
+		font-size: 2.5vw;
 		color: rgba(0, 0, 0, 0.87);
 		position: relative;
 		left: 0vw;
@@ -911,8 +908,8 @@ import '../styles/global.css';
 		justify-content: flex-start; 	
 	}
 	.introduction-image {
-		width: 40vw;
-		height: 64vh;
+		width: 32vw;
+		height: 56vh;
 		object-fit: cover;
 		border-radius: 40px;
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
@@ -926,15 +923,15 @@ import '../styles/global.css';
 	}
 	.introduction-name {
 		font-weight: 700;
-		font-size: 3vw;
+		font-size: 2.5vw;
 		line-height: 4vw;
 		color: rgba(0, 0, 0, 0.86);
 		padding-top: 20px;
 	}
 	.introduction-description {
 		font-weight: 500;
-		font-size: 2vw;
-		line-height: 4vw;
+		font-size: 1.5vw;
+		line-height: 3vw;
 		color: rgba(0, 0, 0, 0.6);
 		padding-top: 64px;
 	}
@@ -945,7 +942,7 @@ import '../styles/global.css';
 
 	.introduction-subtitle {
 		font-weight: 500;
-		font-size: 2.5vw;
+		font-size: 2vw;
 		line-height: 2vw;
 		color: rgba(0, 0, 0, 0.6);
 		padding-top: 64px;
@@ -953,8 +950,8 @@ import '../styles/global.css';
 
 	.introduction-history {
 		font-weight: 400;
-		font-size: 2vw;
-		line-height: 4vw;
+		font-size: 1.5vw;
+		line-height: 3vw;
 		color: rgba(0, 0, 0, 0.56);
 		padding-top: 32px;
 	}
@@ -994,7 +991,7 @@ import '../styles/global.css';
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap: 64px;
+		gap: 88px;
 	}
 	.wrap2-clinic-point {
 		padding-top: 0px;
@@ -1005,18 +1002,21 @@ import '../styles/global.css';
 	.wrap2-flow {
 		background: #F5F5F7;
 		border-radius: 40px;
-		padding: 164px 8vw;
-		margin: 24px 28vw;
+		padding: 100px 1vw;
+		margin: 24px 36vw;
 		flex-direction: column;
 		justify-content: flex-start; 	
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
 	}
 	.clinic-flow-image {
-		width: 64%;
+		width: 52%;
 		padding-top: 60px;
 		padding-bottom: 80px;
-		padding-left: 6.5vw;
+		padding-left: 8.5vw;
 		object-fit: cover;
+	}
+	.flow {
+		padding-left: 40px;
 	}
 	.flow-description {
 		font-weight: 500;
@@ -1025,10 +1025,15 @@ import '../styles/global.css';
 		color: rgba(0, 0, 0, 0.6);
 		padding: 16px 64px;
 	}
+	.treatment {
+		padding-left: 28vw;
+	}
 	.wrap2-treatment {
 		border-radius: 40px;
-		padding-top: 140px;
-		padding-bottom: 80px;
+		padding-top: 64x;
+		padding-bottom: 40px;
+		padding-left:  8vw;
+		padding-right:  8vw;
 	}
 	.wrap-row-treatment {
 		display: flex;
@@ -1038,62 +1043,63 @@ import '../styles/global.css';
 		gap: 7vw;
 	}
 	.treatment-image {
-		width: 20vw;
-		height: 20vw;
+		width: 16vw;
+		height: 16vw;
 		border-radius: 40px;
 		object-fit: cover;
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
 	}
 	.treatment-sub-title {
 		font-weight: 500;
-		font-size: 3vw;
+		font-size: 2vw;
 		line-height: 4vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-top: 40px;
 	}
 	.treatment-description {
 		font-weight: 400;
-		font-size: 1.5vw;
-		line-height: 4vw;
+		font-size: 1vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-top: 24px;
 	}
 
 	.map-content {
 		font-weight: 500;
-		font-size: 2.5vw;
-		line-height: 6vw;
+		font-size: 1.5vw;
+		line-height: 3vw;
 		color: rgba(0, 0, 0, 0.64);
 		padding-bottom: 12px;
 	}
 	.map-subtitle {
 		font-weight: 700;
-		font-size: 3vw;
+		font-size: 2.5vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-bottom: 32px;
-		padding-top: 48px;
+		padding-top: 24px;
 	}
 
 	.map-content-detail {
 		font-weight: 500;
-		font-size: 2.5vw;
+		font-size: 2vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-bottom: 24px;
 	}
 
 	.clinic-info-content {
-		padding-bottom: 64px;
+		padding-bottom: 32px;
 		display: flex;
 		flex-direction: column;
 		gap: 64px;
 	}
 	.clinic-info {
-		padding-top: 120px;
-		padding-bottom: 120px;
+		width: 40vw;;
 	}
 	.wrap2-footer {
 		background: #F5F5F7;
-		padding-left: 34vw;
+		padding: 120px 32vw;
+	}
+	.wrap-footer-pc {
+		margin: 24px 18vw;
 	}
 }
 
