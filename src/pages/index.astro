@@ -41,7 +41,7 @@ import '../styles/global.css';
 			<img class="introduction-image" src="./images/introduction2.jpg" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像">
 			<p class="introduction-job">院長</p>
 			<p class="introduction-name">新井浩樹</p>
-			<aside class="introduction-description">この度良いご縁があり、いわもと泌尿器科を継承させていただくこととなりました<br>新井浩樹です。<br><br>
+			<aside class="introduction-description">この度良いご縁があり、<br>いわもと泌尿器科を継承させていただくこととなりました新井浩樹です。<br><br>
 				1997年に大阪大学医学部医学科を卒業後、25年間に渡り6つの総合病院で臨床経験を積んで参りました。<br><br>これまでの経験を活かし、ご来院くださるすべての患者様に信頼される医療を提供できますよう、日々の精進を欠かさず頑張っていく決意でございます。
 				<br><br>
 				些細なことでもお気軽にご相談ください
@@ -77,7 +77,7 @@ import '../styles/global.css';
 				<br>
 				長年に渡りひとりの患者様を担当することで初診から手術、術後の定期検査、再発時の治療など先を見通した細やかな対応を心がけてきました。
 				<br><br>
-				将来のことを考え開業準備を進めておりましたところ、良いご縁をいただき、いわもと泌尿器科を継承させていただくこととなりました。
+				将来のことを考え開業準備を進めておりましたところ、良いご縁をいただき、<br>いわもと泌尿器科を継承させていただくこととなりました。
 				<br><br>
 				<p class="introduction-subtitle">これまでの臨床経験</p>
 				<br><br>
@@ -281,16 +281,16 @@ import '../styles/global.css';
 				三田幹線南ウッディタウン(ミドリ電化、阪急オアシスが目印です)で側道に降り、降りたところの信号を右折。右折してすぐのローソンを超えて、2つ目の信号を左折。道沿いに進み、200m先右側にあります。
 				<br><br>
 			</span>
-		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3272.3412307221233!2d135.1845661!3d34.8978853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000650720017c01%3A0xdfaf2e3dbf3abcd4!2z44GE44KP44KC44Go5rOM5bC_5Zmo56eR!5e0!3m2!1sja!2sjp!4v1661932774319!5m2!1sja!2sjp" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+			<iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3272.3412307221233!2d135.1845661!3d34.8978853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000650720017c01%3A0xdfaf2e3dbf3abcd4!2z44GE44KP44KC44Go5rOM5bC_5Zmo56eR!5e0!3m2!1sja!2sjp!4v1661932774319!5m2!1sja!2sjp" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
 			<br><br>
 			<br><br>
 			<br><br>
 			<p class="map-subtitle">診療時間</p>
 			<p class="map-content">月〜金 10:00~19:00</p>
 			<br><br>
+			<img class="calender-image" src="./images/calender.png" alt="あらい腎泌尿器科クリニックの診療時間">
 			<br><br>
-			<iframe src="https://calendar.google.com/calendar/embed?src=addressbook%23contacts%40group.v.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" frameborder="0" scrolling="no"></iframe>
+		</div>
 	</section>
 </body>
 
@@ -298,7 +298,7 @@ import '../styles/global.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1000px) {
 
 	body {
 		font-family: 'Noto Sans JP', sans-serif;
@@ -669,7 +669,6 @@ import '../styles/global.css';
 		font-size: 5vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding-bottom: 32px;
-		padding-top: 48px;
 	}
 
 	.map-content-detail {
@@ -691,7 +690,11 @@ import '../styles/global.css';
 	}
 	.wrap2-footer {
 		background: #F5F5F7;
-		padding: 64px;
+		padding: 64px 64px 200px 64px;
+	}
+	.calender-image {
+		width: 100%;
+		padding-bottom: 120px;
 	}
 	}
 
@@ -1102,6 +1105,9 @@ import '../styles/global.css';
 	}
 	.wrap-footer-pc {
 		margin: 24px 18vw;
+	}
+	.googlemap {
+		width: 50vw;
 	}
 }
 
