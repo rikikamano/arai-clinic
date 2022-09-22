@@ -1,11 +1,18 @@
 ---
 import '../styles/global.css';
-
+import { SEO } from "astro-seo";
 ---
+
+<html lang="jp">
+  <head>
+    <SEO
+      title="あらい腎泌尿器科クリニック｜三田のアットホームな泌尿器科"
+      description="あらい腎泌尿器科クリニックは大阪大学卒の医師が院長をつとめる泌尿器科です。男性、女性子供問わず三田で患者様に寄り添った治療を目指して診療しております。お気軽にご来診ください。" />
+  </head>
 <body>
 	<header class="header-label content">
 		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます<br>
-			ご来院の際はおしっこをためてお越しくださいいい</p>
+			ご来院の際はおしっこをためてお越しください</p>
 	</header>
 
 	<section class="main-image content">
@@ -1113,3 +1120,4 @@ import '../styles/global.css';
 }
 
 </style>
+</html>
