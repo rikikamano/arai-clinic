@@ -1,0 +1,28 @@
+.timeline-Widget {
+    padding: 20px;
+    background-size: auto auto;
+    background-color: #3c3c3c;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #323232 10px, #323232 20px)
+  }
+  .timeline-TweetList-tweet {
+    color: #fff
+  }
+  .SandboxRoot.env-bp-660 .timeline-Header-byline, .SandboxRoot.env-bp-660 .timeline-Header-subtitle, .SandboxRoot.env-bp-820 .timeline-Header-byline, .SandboxRoot.env-bp-820 .timeline-Header-subtitle, .SandboxRoot.env-bp-970 .timeline-Header-byline, .SandboxRoot.env-bp-970 .timeline-Header-subtitle {
+    color: #fff !important
+  }
+  .timeline-Header-title {
+    color: #fff !important;
+    font-size: 20px !important
+  }
+  .timeline-Header-title a {
+    color: #fff !important
+  }
+  .timeline-Tweet {
+    transition: background-color .3s
+  }
+  .timeline-Tweet:hover {
+    background-color: rgba(0, 0, 0, .2)
+  }
+  .TwitterCard-container--clickable:hover {
+    background-color: rgba(0, 0, 0, .2)
+  }
