@@ -9,7 +9,7 @@ function changeTwitterWidgetDesign() {
       $twitter_widget_contents
         .find("head")
         .append(
-          "<style>.twitter-timeline span{font-size:200px; !important line-height:200px}</style>>"
+          "<style>.SandboxRoot .timeline-Widget .timeline-Tweet-text{font-size:200px; !important line-height:200px}</style>>"
         );
     } else {
       setTimeout(function () {
