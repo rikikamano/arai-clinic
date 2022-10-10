@@ -9,28 +9,7 @@ import { SEO } from "astro-seo";
       title="あらい腎泌尿器科クリニック｜三田のアットホームな泌尿器科"
       description="あらい腎泌尿器科クリニックは大阪大学卒の医師が院長の泌尿器科です。男性、女性子供問わず三田で患者様に寄り添った治療を目指して診療しております。" />
   
-	  function changeTwitterWidgetDesign() {
-		var $twitter_widget = jQuery("iframe.twitter-timeline");
-		var $twitter_widget_contents = $twitter_widget.contents();
-	  
-		if (
-		  $twitter_widget.length > 0 &&
-		  $twitter_widget[0].contentWindow.document.body.innerHTML !== ""
-		) {
-		  $twitter_widget_contents
-			.find("head")
-			.append(
-			  "<style>.twitter-timeline span{font-size:200px; !important line-height:200px}</style>>"
-			);
-		} else {
-		  setTimeout(function () {
-			changeTwitterWidgetDesign();
-		  }, 350);
-		}
-	  }
-	  
-	  changeTwitterWidgetDesign(); 
-	
+	  <script type="text/javascript" src="/tw.js" id="twitter-script-js"></script>
 	</head>
 <body>
 	<header class="header-label content">
