@@ -1,5 +1,5 @@
 function changeTwitterWidgetDesign() {
-    var $twitter_widget = jQuery("iframe.twitter-timeline");
+    var $twitter_widget = $("iframe.twitter-timeline");
     var $twitter_widget_contents = $twitter_widget.contents();
   
     if (
