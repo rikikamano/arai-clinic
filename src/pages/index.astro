@@ -7,21 +7,40 @@ import { SEO } from "astro-seo";
   <head>
     <SEO
       title="あらい腎泌尿器科クリニック｜三田のアットホームな泌尿器科"
-      description="あらい腎泌尿器科クリニックは大阪大学卒の医師が院長をつとめる泌尿器科です。男性、女性子供問わず三田で患者様に寄り添った治療を目指して診療しております。お気軽にご来診ください。" 
-	  noindex={true}
-	  />
+      description="あらい腎泌尿器科クリニックは大阪大学卒の医師が院長をつとめる泌尿器科です。男性、女性子供問わず三田で患者様に寄り添った治療を目指して診療しております。お気軽にご来診ください。" />
   </head>
 <body>
+	<header class="header-label content">
+		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます<br>
+			ご来院の際はおしっこをためてお越しください</p>
+	</header>
 
 	<section class="main-image content">
 		<img class="main-image-content" src="./images/top-green.png" alt="あらいクリニックをイメージする緑のイメージ画像">
 		<span class="main-image-text1">患者様の笑顔のために🍀 </span>
 		<span class="main-image-text2">🍀よりそう診療を目指して</span>
+		<span class="main-image-description1">TEL:<a>079-553-8886</a></span>
+		<span class="main-image-description2">〒669-1323 兵庫県三田市あかしあ台1-49-1</span>
+		<span class="main-image-description3">院長 新井浩樹</span>
 
 		<img class="main-logo" src="./images/logo.png" alt="あらい腎泌尿器科クリニックのロゴ">
 	</section>
 
+	<div class="button-body">
+		<a class="button-content1" href="tel:09000000000">
+			<img class="button-image" src="./images/phone.png" alt="ボタンの電話イメージ">
+			<span class="button-text1">電話</span>
+		</a>
+		<a class="button-content2" href="https://tol-app.jp/s/5st9gdv0o7t2hxn81l8i/lubj0z">
+			<img class="button-image" src="./images/reserve.png" alt="ボタンの予約イメージ">
+			<span class="button-text2">LINE予約</span>
+		</a>	
+	</div>
 	<section class="wrap1">
+		<section class="wrap2-notification wrap-item">
+			<p class="notify title">お知らせ</p>
+			<a class="twitter-timeline" data-lang="ja" data-height="400" href="https://twitter.com/araiclinic?ref_src=twsrc%5Etfw">Tweets by araiclinic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</section>
 	
 		<section class="wrap2-introduction wrap-item">
 			<p class="introduction title">院長紹介</p>
@@ -143,6 +162,141 @@ import { SEO } from "astro-seo";
 				</aside>
 			</aside>
 		</section>
+	</section>
+
+	<section class="wrap2">
+		<section class="wrap2-clinic-point wrap-item">
+			<p class="clinic-point title">クリニック案内</p>
+			<div class="wrap-image-clinic">
+				<div class="clinic-point-content">
+					<span class="clinic-point-text1">臨床経験豊富な医師に<br>気軽に相談可能</span>
+					<img class="clinic-point-image" src="./images/clinic-point1.png" alt="あらい腎泌尿器科の押しポイント1">
+				</div>
+
+				<div class="clinic-point-content">
+					<span class="clinic-point-text">アットホームな病院</span>
+					<img class="clinic-point-image" src="./images/clinic-point2.png" alt="あらい腎泌尿器科の押しポイント2">
+				</div>
+
+				<div class="clinic-point-content">
+					<span class="clinic-point-text">最新の設備が充実</span>
+					<img class="clinic-point-image" src="./images/clinic-point3.png" alt="あらい腎泌尿器科の押しポイント3">
+				</div>
+			</div>
+		</section>
+		<section class="wrap2-flow wrap-item">
+			<p class="flow title">診療の流れ</p>
+			<img class='clinic-flow-image' src="./images/clinic-flow.png" alt="あらい腎泌尿器科の診察の流れ">
+			<p class="flow-description">
+				泌尿器科というデリケートなジャンルなので「何をされるのかな?」と不安に 感じる方も多いと思いますが、 ほとんどの場合は簡単な問診と尿検査で済むことが多いです。
+				<br><br>
+				重大な病気が疑われる場合はさらに精密な検査が必要な場合もありますが、あらい腎泌尿器科クリニックではこれまでの 豊富な臨床経験をもとに患者様の状況を把握し的確な治療方針をご提案させていただきます。
+				<br><br>
+				腎臓・膀胱・おしっこ関連のお悩みはお気軽に お問い合わせ下さい。
+			</p>
+		</section>
+		<section class="wrap2-treatment wrap-item">
+			<p class="treatment title">診療内容</p>
+			<div class="wrap-treatment-flex">
+				<div class="wrap-row-treatment">
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis1.jpeg" alt="あらい腎泌尿器科クリニックの男性泌尿器科診療">
+						<p class="treatment-sub-title">男性泌尿器科</p>
+						<p class="treatment-description">尿路結石、膀胱・腎臓がん等</p>
+					</div>
+
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis2.jpeg" alt="あらい腎泌尿器科クリニックの女性泌尿器科診療">
+						<p class="treatment-sub-title">女性泌尿器科</p>
+						<p class="treatment-description">膀胱炎、尿もれ等</p>
+					</div>
+				</div>
+
+				<div class="wrap-row-treatment">
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis3.jpeg" alt="あらい腎泌尿器科クリニックの子供泌尿器科診療">
+						<p class="treatment-sub-title">小児泌尿器科</p>
+						<p class="treatment-description">包茎、おねしょ等</p>
+					</div>
+
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis4.jpeg" alt="あらい腎泌尿器科クリニックの漢方外来診療">
+						<p class="treatment-sub-title">漢方外来</p>
+						<p class="treatment-description">泌尿器症状への漢方製剤</p>
+					</div>
+				</div>
+
+				<div class="wrap-row-treatment">
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis5.jpeg" alt="あらい腎泌尿器科クリニックの禁煙外来診療">
+						<p class="treatment-sub-title">禁煙外来</p>
+						<p class="treatment-description">貼り薬や飲み薬を使って治療</p>
+					</div>
+
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis6.jpeg" alt="あらい腎泌尿器科クリニックの男性更年期診療">
+						<p class="treatment-sub-title">男性更年期</p>
+						<p class="treatment-description">倦怠感・めまい・イライラ</p>
+					</div>
+				</div>
+
+				<div class="wrap-row-treatment">
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis7.jpeg" alt="あらい腎泌尿器科クリニックのAGA診療">
+						<p class="treatment-sub-title">AGA</p>
+						<p class="treatment-description">生え際後退、薄毛</p>
+					</div>
+
+					<div class="treatment-content">
+						<img class="treatment-image" src="./images/dignosis8.webp" alt="あらい腎泌尿器科クリニックのED診療">
+						<p class="treatment-sub-title">ED</p>
+						<p class="treatment-description">勃起不全や維持できない</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<section class="wrap2-footer wrap-item">  
+		<div class="wrap-footer-pc">
+			<p class="clinic-info title">クリニック情報</p>
+			<p class="map-subtitle">住所</p>
+			<p class="map-content">〒669-1323 兵庫県三田市あかしあ台 1-49-1</p>
+			<p class="map-subtitle">電話番号</p>
+			<p class="map-content">079-553-8886</p>
+			<p class="map-subtitle">アクセス</p>
+			<span class="map-content">
+				三田ウッディタウンのあかしあ台コミュニティハウス前
+				<br><br>
+				<p class="map-content-detail">電車</p>
+				神戸電鉄「南ウッディタウン駅」で下車し、はじかみ池公園に沿って徒歩約8分です(ゆるやかな上り坂）。途中の踏切のモニュメントがあるところからは、公園に沿わずに道路を渡ってウッディタウン動物病院の横を通ればすぐです。				
+				<br><br>
+				<p class="map-content-detail">バス</p>
+				JR新三田駅から神姫バスを利用し、1番乗り場から41系統のバスにお乗りください。「コミュニティホール前」バス停で降りてすぐです。				
+				<br><br>
+				<p class="map-content-detail">車</p>
+				■新三田駅方面から
+				<br><br>
+				三田市民病院前の道を、ウッディタウン内へ西に進んでください。三田幹線（神戸電鉄)ガードから3つ目信号(ローソンを超えて2つ目)を左にまがり、200m先の右側にあります。				<br><br>
+				■フラワータウン、神戸市方面から
+				<br><br>
+				三田幹線南ウッディタウン（ミドリ電化、阪急オアシスのところ)で側道に降り、降りたところの信号を左折。すぐのローソンを超えて2つめ信号左折。道沿い200m先右側。
+				<br><br>
+				■テクノパーク方面から
+				<br><br>
+				三田幹線南ウッディタウン(ミドリ電化、阪急オアシスが目印です)で側道に降り、降りたところの信号を右折。右折してすぐのローソンを超えて、2つ目の信号を左折。道沿いに進み、200m先右側にあります。
+				<br><br>
+			</span>
+			<iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3272.3412307221233!2d135.1845661!3d34.8978853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000650720017c01%3A0xdfaf2e3dbf3abcd4!2z44GE44KP44KC44Go5rOM5bC_5Zmo56eR!5e0!3m2!1sja!2sjp!4v1661932774319!5m2!1sja!2sjp" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+			<br><br>
+			<br><br>
+			<br><br>
+			<p class="map-subtitle">診療時間</p>
+			<p class="map-content">月〜金 10:00~19:00</p>
+			<br><br>
+			<img class="calender-image" src="./images/calender.png" alt="あらい腎泌尿器科クリニックの診療時間">
+			<br><br>
+		</div>
 	</section>
 </body>
 
