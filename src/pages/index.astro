@@ -11,19 +11,19 @@ import { SEO } from "astro-seo";
   </head>
 <body>
 	<header class="header-label content">
-		<p class="header-label-text">待ち時間短縮のためご予約優先とさせていただきます<br>
-			ご来院の際はおしっこをためてお越しください</p>
+		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
 	</header>
 
 	<section class="main-image content">
+		<section class="wrap1-main">
+			<span class="main-image-text1">患者様の笑顔のために🍀 </span>
+			<span class="main-image-text2">🍀よりそう診療を目指して</span>
+			<span class="main-image-description1">TEL:<a>079-553-8886</a></span>
+			<span class="main-image-description2">〒669-1323 兵庫県三田市あかしあ台1-49-1</span>
+			<span class="main-image-description3">阪大医卒 院長 新井浩樹</span>
+			<img class="main-logo" src="./images/logo.png" alt="あらい腎泌尿器科クリニックのロゴ">
+		</section>
 		<img class="main-image-content" src="./images/top-sky.jpeg" alt="あらいクリニックをイメージする緑のイメージ画像">
-		<span class="main-image-text1">患者様の笑顔のために🍀 </span>
-		<span class="main-image-text2">🍀よりそう診療を目指して</span>
-		<span class="main-image-description1">TEL:<a>079-553-8886</a></span>
-		<span class="main-image-description2">〒669-1323 兵庫県三田市あかしあ台1-49-1</span>
-		<span class="main-image-description3">院長 新井浩樹</span>
-
-		<img class="main-logo" src="./images/logo.png" alt="あらい腎泌尿器科クリニックのロゴ">
 	</section>
 
 	<section class="wrap1">
@@ -338,15 +338,27 @@ import { SEO } from "astro-seo";
 		flex-direction:column;
 		align-items: center;
 	}
+
 	.main-image-content {
 		width: 100vw;
 		height: 80vh;
 		object-fit: cover;
 	}
-	.main-image-text1 {
+
+	.wrap1-main {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start; 	
+	}
+
+	.main-logo {
 		position: absolute;
-		top: 26vh;
-		left: 18vw;
+		top: 18vh;
+		height: 24vw;
+		left: 16vw;
+	}
+
+	.main-image-text1 {
 		font-weight: 900;
 		font-size: 4vw;
 		line-height: 12vw;
@@ -355,8 +367,8 @@ import { SEO } from "astro-seo";
 	}
 	.main-image-text2 {
 		position: absolute;
-		top: 32vh;
-		left: 12vw;
+		top: 36vh;
+		left: 18vw;
 		font-weight: 900;
 		font-size: 4vw;
 		line-height: 12vw;
@@ -366,8 +378,8 @@ import { SEO } from "astro-seo";
 
 	.main-image-description1 {
 		position: absolute;
-		top: 41vh;
-		left: 15vw;
+		top: 42vh;
+		left: 20vw;
 		font-weight: 900;
 		font-size: 8vw;
 		line-height: 12vw;
@@ -397,13 +409,6 @@ import { SEO } from "astro-seo";
 		line-height: 12vw;
 		padding-top: 2vw;
 		color: #595656;
-	}
-
-	.main-logo {
-		position: absolute;
-		top: 18vh;
-		height: 16vw;
-		left: 16vw;
 	}
 
 	.wrap-item {
