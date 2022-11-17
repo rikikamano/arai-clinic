@@ -1,5 +1,4 @@
 ---
-// import '@fontsource/noto-sans-jp';
 
 export interface Props {
 	title: string;
@@ -24,8 +23,6 @@ const { title } = Astro.props as Props;
 </html>
 
 <style>
-
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
 
   :root {
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -54,8 +51,4 @@ const { title } = Astro.props as Props;
     font-size: var(--font-size-lg);
   }
 
-  :global(code) {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-  }
 </style>
