@@ -17,7 +17,7 @@ import { SEO } from "astro-seo";
 	<header class="header-label">
 		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
 	</header>
-
+	<img class="main-bg" src="./images/top-sky.png" >
 	<section class="main-image">
 		<img class="main-logo" src="./images/logo.png" alt="あらい腎泌尿器科クリニックのロゴ">
 		<span class="main-image-text1">患者様の笑顔のために🍀 </span>
@@ -421,6 +421,13 @@ import { SEO } from "astro-seo";
 			text-align: center;
 			color: #F5F5F7;
 		}
+		
+		.main-bg {
+			position: absolute;
+			width: 100vw;
+			height: 80vh;
+			object-fit: cover;
+		}
 
 		.main-image {
 			position: relative;
@@ -433,8 +440,6 @@ import { SEO } from "astro-seo";
 			justify-content: center;
 			flex-direction:column;
 			align-items: center;
-			background: url("./images/top-sky.png");
-			background-size: cover;
 		}
 
 
