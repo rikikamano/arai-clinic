@@ -14,20 +14,17 @@ import { SEO } from "astro-seo";
 	  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&display=swap" rel="stylesheet">
 	</head>
 <body>
-	<header class="header-label content">
+	<header class="header-label">
 		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
 	</header>
 
-	<section class="main-image content">
-		<section class="wrap1-main">
+	<section class="main-image">
 			<span class="main-image-text1">患者様の笑顔のために🍀 </span>
 			<span class="main-image-text2">🍀よりそう診療を目指して</span>
 			<span class="main-image-description1">TEL:<a>079-553-8886</a></span>
 			<span class="main-image-description2">〒669-1323 兵庫県三田市あかしあ台1-49-1</span>
 			<span class="main-image-description3">阪大医卒 院長 新井浩樹</span>
 			<img class="main-logo" src="./images/logo.png" alt="あらい腎泌尿器科クリニックのロゴ">
-		</section>
-		<img class="main-image-content" src="./images/top-sky.jpeg" alt="あらいクリニックをイメージする緑のイメージ画像">
 	</section>
 
 	<section class="wrap1">
@@ -168,38 +165,11 @@ import { SEO } from "astro-seo";
 		<section class="wrap2-treatment wrap-item">
 			<p class="treatment title">診療内容</p>
 			<div class="wrap-treatment-flex">
-				<div class="wrap-row-treatment">
-					<div class="treatment-content">
-						<img class="treatment-image" src="./images/dignosis1.jpeg" alt="あらい腎泌尿器科クリニックの男性泌尿器科診療">
-						<p class="treatment-sub-title">男性泌尿器科</p>
-						<p class="treatment-description">尿路結石、膀胱・腎臓がん等</p>
-					</div>
-
-					<div class="treatment-content">
-						<img class="treatment-image" src="./images/dignosis2.jpeg" alt="あらい腎泌尿器科クリニックの女性泌尿器科診療">
-						<p class="treatment-sub-title">女性泌尿器科</p>
-						<p class="treatment-description">膀胱炎、尿もれ等</p>
-					</div>
-				</div>
-
-				<div class="wrap-row-treatment">
-					<div class="treatment-content">
-						<img class="treatment-image" src="./images/dignosis3.jpeg" alt="あらい腎泌尿器科クリニックの子供泌尿器科診療">
-						<p class="treatment-sub-title">小児泌尿器科</p>
-						<p class="treatment-description">包茎、おねしょ等</p>
-					</div>
-
-					<div class="treatment-content">
-						<img class="treatment-image" src="./images/dignosis4.jpeg" alt="あらい腎泌尿器科クリニックの漢方外来診療">
-						<p class="treatment-sub-title">漢方外来</p>
-						<p class="treatment-description">泌尿器症状への漢方製剤</p>
-					</div>
-				</div>
 			</div>
 		</section>
 	</section>
 
-	<section class="wrap2-footer wrap-item">  
+	<section class="wrap3-footer wrap-item">  
 		<div class="wrap-footer-pc">
 			<p class="clinic-info title">クリニック情報</p>
 			<p class="map-subtitle">住所</p>
@@ -310,26 +280,17 @@ import { SEO } from "astro-seo";
 		.main-image {
 			position: relative;
 			width:100vw;
-			height: 64vh;
+			height: 80vh;
 			left: 0px;
 			display:-webkit-flex;
 			display:-ms-flexbox;
 			display: flex;
 			flex-direction:column;
 			align-items: center;
+			background: url("./images/top-sky.jpeg");
+			background-size: cover;
 		}
 
-		.main-image-content {
-			width: 100vw;
-			height: 80vh;
-			object-fit: cover;
-		}
-
-		.wrap1-main {
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start; 	
-		}
 
 		.main-logo {
 			position: absolute;
@@ -520,39 +481,6 @@ import { SEO } from "astro-seo";
 			color: rgba(0, 0, 0, 0.6);
 			padding: 16px 64px;
 		}
-		.wrap2-treatment {
-			border-radius: 40px;
-			padding-top: 140px;
-			padding-bottom: 80px;
-		}
-		.wrap-row-treatment {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			padding-bottom: 64px;
-			gap: 7vw;
-		}
-		.treatment-image {
-			width: 40vw;
-			height: 40vw;
-			border-radius: 40px;
-			object-fit: cover;
-			filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
-		}
-		.treatment-sub-title {
-			font-weight: 500;
-			font-size: 5vw;
-			line-height: 4vw;
-			color: rgba(0, 0, 0, 0.87);
-			padding-top: 40px;
-		}
-		.treatment-description {
-			font-weight: 400;
-			font-size: 3vw;
-			line-height: 4vw;
-			color: rgba(0, 0, 0, 0.87);
-			padding-top: 24px;
-		}
 
 		.map-content {
 			font-weight: 500;
@@ -587,7 +515,7 @@ import { SEO } from "astro-seo";
 			padding-top: 120px;
 			padding-bottom: 120px;
 		}
-		.wrap2-footer {
+		.wrap3-footer {
 			background: #F5F5F7;
 			padding: 64px 64px 200px 64px;
 		}
@@ -596,6 +524,16 @@ import { SEO } from "astro-seo";
 			padding-bottom: 120px;
 		}
 	}
+/* 
+	@media screen and (min-width: 701px) and (max-width: 999px){
+
+		body {
+			width: 100vw;
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+		}
+	} */
 
 	@media screen and (min-width: 1000px) {
 
@@ -665,18 +603,16 @@ import { SEO } from "astro-seo";
 		}
 
 		.main-image {
+			width: 100vw;
 			position: relative;
-			height: 64vh;
+			height: 80vh;
 			display:-webkit-flex;
 			display:-ms-flexbox;
 			display: flex;
 			flex-direction:column;
 			align-items: center;
-		}
-		.main-image-content {
-			width: 100vw;
-			height: 80vh;
-			object-fit: cover;
+			background: url("./images/top-sky.jpeg");
+			background-size: cover;
 		}
 
 		.main-logo {
@@ -882,33 +818,6 @@ import { SEO } from "astro-seo";
 			padding-top: 64x;
 			padding-bottom: 40px;
 		}
-		.wrap-row-treatment {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			padding: 64px 400px;
-			gap: 7vw;
-		}
-		.treatment-image {
-			width: 16vw;
-			height: 16vw;
-			border-radius: 40px;
-			object-fit: cover;
-			filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
-		}
-		.treatment-sub-title {
-			font-weight: 500;
-			font-size: 2vw;
-			line-height: 4vw;
-			color: rgba(0, 0, 0, 0.87);
-			padding-top: 40px;
-		}
-		.treatment-description {
-			font-weight: 400;
-			font-size: 1vw;
-			color: rgba(0, 0, 0, 0.87);
-			padding-top: 24px;
-		}
 
 		.map-content {
 			font-weight: 500;
@@ -941,7 +850,7 @@ import { SEO } from "astro-seo";
 		.clinic-info {
 			width: 40vw;;
 		}
-		.wrap2-footer {
+		.wrap3-footer {
 			background: #F5F5F7;
 			padding-top: 120px;
 			padding-bottom: 120px;
