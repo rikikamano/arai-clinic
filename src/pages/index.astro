@@ -371,7 +371,7 @@ import { SEO } from "astro-seo";
 	}
 
 	.wrap1 {
-		background: #F5F5F7;
+		background: #FFFFFF;
 		display: flex;
 		flex-direction: column;
 		padding: 64px;
@@ -621,7 +621,7 @@ import { SEO } from "astro-seo";
 	}
 
 	.wrap2-flow {
-		background: #F5F5F7;
+		background: #FFFFFF;
 		display: flex;
 		align-items: center;
 		flex-direction:column;
@@ -697,13 +697,13 @@ import { SEO } from "astro-seo";
 	}
 
 	summary {
-		list-style-type: none;
-		list-style: none;
-	}
+  display: block;
+  list-style: none;
+}
 
-	details {
-		list-style-type: none;
-		list-style: none;
+	/* 一部ブラウザで消えなかった場合は以下も追記 */
+	summary::-webkit-details-marker {
+	display:none;
 	}
 
 	.arrow {
