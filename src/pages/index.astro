@@ -17,16 +17,12 @@ import { SEO } from "astro-seo";
 	<header class="header-label">
 		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
 		<section class="header-nav">
-			<div>
-				<a href="#notify">1</a>
-				<a href="#introduction">2</a>
-				<a href="#clinic-point">3</a>
-			</div>
-			<div>
-				<a href="#flow">4</a>
-				<a href="#treatment">5</a>
-				<a href="#footer">6</a>
-			</div>
+				<a href="#notify"> <img class="icon-notify" src="./images/notify.png"> お知らせ</a>
+				<a href="#introduction"><img class="icon-intro" src="./images/intro.png"> 院長紹介</a>
+				<a href="#clinic-point"><img class="icon-clinic-point" src="./images/clinic-point.png"> 病院紹介</a>
+				<a href="#flow"><img class="icon-flow" src="./images/flow.png"> 診療の流れ</a>
+				<a href="#treatment"><img class="icon-treatment" src="./images/treatment.png"> 診療内容</a>
+				<a href="#footer"><img class="icon-map" src="./images/map.png"> アクセス</a>
 		</section>
 	</header>
 	<img class="main-bg" src="./images/top-sky.png" >
@@ -53,7 +49,6 @@ import { SEO } from "astro-seo";
 			<aside class="introduction-description">この度良いご縁があり、<br>いわもと泌尿器科を継承させていただくこととなりましたあらい腎泌尿器科クリニックの院長、新井浩樹です。<br><br>
 				1997年に大阪大学医学部医学科を卒業後、25年間に渡り6つの総合病院で臨床経験を積んで参りました。<br><br>これまでの経験を活かし、ご来院くださるすべての患者様に信頼される医療を提供できますよう、日々の精進を欠かさず頑張っていく決意でございます。
 				<br><br>
-				些細なことでもお気軽にご相談ください
 				<p class="flow-description">
 					泌尿器科というデリケートなジャンルなので「何をされるのかな?」と不安に 感じる方も多いと思いますが、 ほとんどの場合は簡単な問診と尿検査で済むことが多いです。
 					<br><br>
@@ -179,6 +174,7 @@ import { SEO } from "astro-seo";
 		<section class="wrap2-flow" id="flow">
 			<p class="flow title">診療の流れ</p>
 			<img class='clinic-flow-image' src="./images/clinic-flow.png" alt="あらい腎泌尿器科の診察の流れ">
+			<span class="flow-description">診察結果によっては精密検査をご案内いたします。</span>
 		</section>
 		<section class="wrap2-treatment" id="treatment">
 			<p class="treatment title">診療内容</p>
@@ -375,6 +371,10 @@ import { SEO } from "astro-seo";
 		align-items: center;
 	}
 
+	a, a:link, a:visited, a:hover, a:active {
+  		color:#FFFFFF;
+	}
+
 	.wrap1 {
 		background: #FFFFFF;
 		display: flex;
@@ -405,25 +405,46 @@ import { SEO } from "astro-seo";
 		background: #2687FF;
 		position: fixed;
 		width: 100vw;
-		height: 12vw;
-		left: 0%;
-		right: 0%;
-		top: 0px;
+		height: auto;
 		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 3vw 0;
+		gap: 2vh;
 	}
 
+
 	.header-label-text {
-		position: absolute;
-		height: 4px;
-		left: 38px;
-		right: 37px;
-		top:32px;
+		position: relative;
 		font-weight: 700;
 		font-size: 3.5vw;
 		line-height: 5vw;
 		text-align: center;
 		color: #F5F5F7;
 	}
+
+	.header-nav {
+		display: flex;
+		flex-direction: row;
+		gap: 5.5vw;
+	}
+
+	.header-nav a {
+		flex: 1; /* これが重要！ */
+		font-size: 2.5vw;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2vw;
+	}
+
+	.header-nav img {
+		width: 7vw;
+	}
+
 
 	.main-bg {
 		position: absolute;
