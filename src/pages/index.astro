@@ -39,7 +39,7 @@ import { SEO } from "astro-seo";
 	<section class="wrap1">
 		<section class="wrap1-notification">
 			<p class="notify title" id="notify">お知らせ</p>
-			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQ3TmIKRviKAEv5RgKa0HFwwWnKWzBbj6rL-N8KdhcVRnXuCS43XKh_HhsN9k25YKJKKlRitt0Be1iK/pub?embedded=true"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
+			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
 		</section>
 		<section class="wrap1-introduction">
 			<p class="introduction title" id="introduction">院長紹介</p>
@@ -794,6 +794,13 @@ import { SEO } from "astro-seo";
 
 	.title {
 		font-size: 4vw;
+	}
+
+	.wrap1 {
+		display: flex;
+		flex-direction: column;
+		padding: 64px;
+		gap: 64px;
 	}
 
 	.header-label {
