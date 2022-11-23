@@ -403,6 +403,7 @@ import { SEO } from "astro-seo";
 
 	.header-label {
 		background: #2687FF;
+		bottom: 0;
 		position: fixed;
 		width: 100vw;
 		height: auto;
@@ -796,14 +797,52 @@ import { SEO } from "astro-seo";
 	}
 
 	.header-label {
-		height: 6vw;
+		height: auto;
+	}
+
+	.header-label {
+		background: #2687FF;
+		position: fixed;
+		width: 100vw;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 0;
+		gap: 0.5vh;
 	}
 
 	.header-label-text {
-		position: absolute;
-		top:8px;
-		font-size: 2vw;
+		position: relative;
+		font-weight: 700;
+		font-size: 1.5vw;
+		line-height: 5vw;
+		text-align: center;
+		color: #F5F5F7;
 	}
+
+	.header-nav {
+		display: flex;
+		flex-direction: row;
+		gap: 12vw;
+		padding-bottom: 2vh;
+	}
+
+	.header-nav a {
+		flex: 1; /* これが重要！ */
+		font-size: 1vw;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2vh;
+	}
+
+	.header-nav img {
+		width: 2vw;
+	}
+
 	.main-bg {
 		height: 85vh;
 	}
@@ -841,14 +880,21 @@ import { SEO } from "astro-seo";
 		top:6vh;
 		font-size: 2vw;
 	}
+
 	.main-image-description3 {
 		position: relative;
 		top:8vh;
 		font-size: 2vw;
 	}
 
-	.main-image-description3 a {
+	.main-image-description4 span {
 		font-size: 1.5vw;
+	}
+
+	.main-image-description4 {
+		position: relative;
+		top:8vh;
+		font-size: 2vw;
 	}
 
 	.notify-frame {
