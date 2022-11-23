@@ -42,20 +42,23 @@ import { SEO } from "astro-seo";
 			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
 		</section>
 		<section class="wrap1-introduction">
-			<p class="introduction title" id="introduction">院長紹介</p>
-			<img class="introduction-image" src="./images/introduction.jpg" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像">
-			<p class="introduction-job">院長</p>
-			<p class="introduction-name">新井浩樹</p>
-			<aside class="introduction-description">この度良いご縁があり、<br>いわもと泌尿器科を継承させていただくこととなりましたあらい腎泌尿器科クリニックの院長、新井浩樹です。<br><br>
-				1997年に大阪大学医学部医学科を卒業後、25年間に渡り6つの総合病院で臨床経験を積んで参りました。<br><br>これまでの経験を活かし、ご来院くださるすべての患者様に信頼される医療を提供できますよう、日々の精進を欠かさず頑張っていく決意でございます。
-				<br><br>
-				<p class="flow-description">
+			<div class="wrap1-intro-pc">
+				<p class="introduction title" id="introduction">院長紹介</p>
+				<img class="introduction-image" src="./images/introduction.jpg" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像">
+				<p class="introduction-job">院長</p>
+				<p class="introduction-name">新井浩樹</p>
+				<aside class="introduction-description">
+					この度良いご縁があり、<br>いわもと泌尿器科を継承させていただくこととなりましたあらい腎泌尿器科クリニックの院長、新井浩樹です。<br><br>
+					1997年に大阪大学医学部医学科を卒業後、25年間に渡り6つの総合病院で臨床経験を積んで参りました。<br><br>これまでの経験を活かし、ご来院くださるすべての患者様に信頼される医療を提供できますよう、日々の精進を欠かさず頑張っていく決意でございます。
+					<br><br>
 					泌尿器科というデリケートなジャンルなので「何をされるのかな?」と不安に 感じる方も多いと思いますが、 ほとんどの場合は簡単な問診と尿検査で済むことが多いです。
 					<br><br>
 					重大な病気が疑われる場合はさらに精密な検査が必要な場合もありますが、あらい腎泌尿器科クリニックではこれまでの 豊富な臨床経験をもとに患者様の状況を把握し的確な治療方針をご提案させていただきます。
 					<br><br>
 					おしっこ関連のお悩みに限らずお気軽にお問い合わせ下さい。
-				</p>
+				</aside>
+			</div>
+			<div>
 				<aside class="introduction-history">
 					<p class="introduction-subtitle">資格、所属学会など</p>
 					<br><br>
@@ -147,7 +150,7 @@ import { SEO } from "astro-seo";
 						</div>
 					</details>	
 				</aside>
-			</aside>
+			</div>
 		</section>
 	</section>
 
@@ -797,11 +800,9 @@ import { SEO } from "astro-seo";
 	}
 
 	.wrap1 {
-		display: flex;
-		flex-direction: column;
-		padding: 64px;
-		gap: 64px;
+		gap: 0px;
 	}
+
 
 	.header-label {
 		height: auto;
@@ -907,6 +908,76 @@ import { SEO } from "astro-seo";
 		position: relative;
 		left: 14vw;
 		width: 80%;
+	}
+
+	.wrap1-introduction {
+		display: flex;
+		flex-direction: row;
+		gap: 4vw;
+	}
+
+	.wrap1-intro-pc {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.introduction-image {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 40px;
+		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+	}
+
+	.introduction-job {
+		font-size: 3vw;
+	}
+
+	.introduction-name {
+		font-size: 4vw;
+	}
+	
+	.introduction-description {
+		font-size: 2vw;
+		line-height: 6vh;
+	}
+
+	.introduction-subtitle {
+		font-size: 3vw;
+	}
+
+	.introduction-history {
+		font-size: 2vw;
+		padding-top: 200px;
+		line-height: 4vh;
+	}
+
+	div.introduction-detail p {
+		padding: 8px 0px;
+	}
+
+	.introduction-content-detail {
+		padding: 8px px;
+		margin: 2vw 0;
+		font-size: 2vw;
+	}
+
+	.arrow {
+		width: 4vw;
+	}
+
+	.wrap-image-clinic {
+		flex-direction: row;
+		gap: 12px;
+
+	}
+
+	.clinic-point-image {
+		width: 24vw;
+		height: 36vw;
+		border-radius: 40px;
+		object-fit: cover;
+		box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px;
 	}
 }
 
