@@ -19,8 +19,8 @@ import { SEO } from "astro-seo";
 		<section class="header-nav">
 				<a href="#notify"> <img class="icon-notify" src="./images/notify.png"> お知らせ</a>
 				<a href="#introduction"><img class="icon-intro" src="./images/intro.png"> 院長紹介</a>
-				<a href="#clinic-point"><img class="icon-clinic-point" src="./images/clinic-point.png"> 病院紹介</a>
-				<a href="#flow"><img class="icon-flow" src="./images/flow.png"> 診療の流れ</a>
+				<a href="#clinic-point" style="font-size: 1.5vw;"><img class="icon-clinic-point" src="./images/clinic-point.png"> クリニック紹介</a>
+				<a href="#flow" style="font-size: 2vw;"><img class="icon-flow" src="./images/flow.png"> 診療の流れ</a>
 				<a href="#treatment"><img class="icon-treatment" src="./images/treatment.png"> 診療内容</a>
 				<a href="#footer"><img class="icon-map" src="./images/map.png"> アクセス</a>
 		</section>
@@ -440,6 +440,7 @@ import { SEO } from "astro-seo";
 		align-items: center;
 		justify-content: center;
 		gap: 2vw;
+		white-space: nowrap;
 	}
 
 	.header-nav img {
