@@ -32,7 +32,7 @@ import { SEO } from "astro-seo";
 		<span class="main-image-text2">よりそう診療を目指して</span>
 		<span class="main-image-description1">TEL:<a>079-553-8886</a></span>
 		<span class="main-image-description2">〒669-1323 兵庫県三田市あかしあ台1-49-1</span>
-		<span class="main-image-description3">スギドラッグあかしあ台店向かい</span>
+		<span class="main-image-description3">スギドラッグあかしあ台店 向かい</span>
 		<span class="main-image-description4"><span>大阪大学医学部卒業</span> 院長 新井浩樹</span>
 	</section>
 
@@ -174,7 +174,7 @@ import { SEO } from "astro-seo";
 		<section class="wrap2-flow" id="flow">
 			<p class="flow title">診療の流れ</p>
 			<img class='clinic-flow-image' src="./images/clinic-flow.png" alt="あらい腎泌尿器科の診察の流れ">
-			<span class="flow-description">診察結果によっては精密検査をご案内いたします。</span>
+			<span class="flow-description">診察結果によっては<br>精密検査をご案内いたします。</span>
 		</section>
 		<section class="wrap2-treatment" id="treatment">
 			<p class="treatment title">診療内容</p>
@@ -380,7 +380,7 @@ import { SEO } from "astro-seo";
 		display: flex;
 		flex-direction: column;
 		padding: 64px;
-		gap: 160px;
+		gap: 120px;
 	}
 
 	.wrap2 {
@@ -388,7 +388,7 @@ import { SEO } from "astro-seo";
 		flex-direction: column;
 		padding-top: 240px;
 		padding-bottom: 240px;
-		gap: 240px;
+		gap: 120px;
 	}
 
 	.title {
@@ -660,7 +660,6 @@ import { SEO } from "astro-seo";
 	.wrap2-flow {
 		background: #FFFFFF;
 		display: flex;
-		align-items: center;
 		flex-direction:column;
 		border-radius: 40px;
 		padding: 64px 0;
@@ -680,6 +679,7 @@ import { SEO } from "astro-seo";
 		line-height: 5vw;
 		color: rgba(0, 0, 0, 0.6);
 		padding: 16px 0;
+		text-align: center;
 	}
 
 	.wrap2-treatment {
@@ -824,23 +824,23 @@ import { SEO } from "astro-seo";
 	.header-nav {
 		display: flex;
 		flex-direction: row;
-		gap: 12vw;
+		gap: 8vw;
 		padding-bottom: 2vh;
 	}
 
 	.header-nav a {
 		flex: 1; /* これが重要！ */
-		font-size: 1vw;
+		font-size: 2vw;
 		width: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 2vh;
+		gap: 1vh;
 	}
 
 	.header-nav img {
-		width: 2vw;
+		width: 3vw;
 	}
 
 	.main-bg {
