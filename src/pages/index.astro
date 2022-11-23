@@ -16,6 +16,18 @@ import { SEO } from "astro-seo";
 <body>
 	<header class="header-label">
 		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
+		<section class="header-nav">
+			<div>
+				<a href="#notify">1</a>
+				<a href="#introduction">2</a>
+				<a href="#clinic-point">3</a>
+			</div>
+			<div>
+				<a href="#flow">4</a>
+				<a href="#treatment">5</a>
+				<a href="#footer">6</a>
+			</div>
+		</section>
 	</header>
 	<img class="main-bg" src="./images/top-sky.png" >
 	<section class="main-image">
@@ -29,19 +41,6 @@ import { SEO } from "astro-seo";
 	</section>
 
 	<section class="wrap1">
-		<section class="wrap1-nav">
-			<div>
-				<a href="#notify">1</a>
-				<a href="#introduction">2</a>
-				<a href="#clinic-point">3</a>
-			</div>
-			<div>
-				<a href="#flow">4</a>
-				<a href="#treatment">5</a>
-				<a href="#footer">6</a>
-			</div>
-		</section>
-
 		<section class="wrap1-notification">
 			<p class="notify title" id="notify">お知らせ</p>
 			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQ3TmIKRviKAEv5RgKa0HFwwWnKWzBbj6rL-N8KdhcVRnXuCS43XKh_HhsN9k25YKJKKlRitt0Be1iK/pub?embedded=true"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
@@ -349,7 +348,7 @@ import { SEO } from "astro-seo";
 					<br><br>
 				</details>
 				<details>
-					<summary class="map-content-detail">車 <a>クリニック横に約20台分の駐車場完備</a> <img class="arrow" src="./images/arrow.png"></summary>
+					<summary class="map-content-detail">車 <a>クリニック横に約18台分の駐車場完備</a> <img class="arrow" src="./images/arrow.png"></summary>
 					■新三田駅方面から
 					<br><br>
 					三田市民病院前の道を、ウッディタウン内へ西に進んでください。三田幹線（神戸電鉄)ガードから3つ目信号(ローソンを超えて2つ目)を左にまがり、200m先の右側にあります。				<br><br>
@@ -516,23 +515,6 @@ import { SEO } from "astro-seo";
 		font-weight: 700;
 		font-size: 4vw;
 		color: #595656;
-	}
-
-	.wrap1-nav {
-		display: flex;
-		gap: 24vw;
-		flex-direction: column;
-	}
-
-	.wrap1-nav div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 24vw;
-	}
-
-	.wrap1-nav a {
-		font-size: 8vw;
 	}
 
 	.wrap1-notification {
