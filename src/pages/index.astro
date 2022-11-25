@@ -42,7 +42,7 @@ import { SEO } from "astro-seo";
 			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
 		</section>
 		<p class="introduction title" id="introduction">院長紹介</p>
-		<img class="introduction-image" src="./images/introduction.jpg" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像">
+		<div class="wrap1-intro-pc-sub"><img class="introduction-image" src="./images/introduction.jpg" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像"></div>
 		<section class="wrap1-introduction">
 			<div class="wrap1-intro-pc">
 				<p class="introduction-job">院長</p>
@@ -809,12 +809,12 @@ import { SEO } from "astro-seo";
 	}
 	
 	.wrap1 {
-		gap: 120px;
+		gap: 32px;
 	}
 
 	.wrap2 {
 		gap: 0;
-		padding-top: 120px;
+		padding-top: 80px;
 		padding-bottom: 0;
 	}
 
@@ -937,16 +937,23 @@ import { SEO } from "astro-seo";
 		flex-direction: column;
 	}
 
+	.wrap1-intro-pc-sub {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.introduction-image {
-		width: 100%;
-		height: 480px;
-		object-fit: fill;
-		border-radius: 40px;
+		width: 48%;
+		height: 600px;
+		object-fit: cover;
+		border-radius: 12px;
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
 	}
 
 	.introduction-job {
 		font-size: 3vw;
+		padding-top: 0px;
 	}
 
 	.introduction-name {
@@ -965,7 +972,7 @@ import { SEO } from "astro-seo";
 
 	.introduction-history {
 		font-size: 2vw;
-		padding-top: 0;
+		padding-top: 24px;
 		line-height: 4vh;
 	}
 
