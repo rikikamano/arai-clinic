@@ -19,8 +19,8 @@ import { SEO } from "astro-seo";
 		<section class="header-nav">
 				<a href="#notify"> <img class="icon-notify" src="./images/notify.png"> お知らせ</a>
 				<a href="#introduction"><img class="icon-intro" src="./images/intro.png"> 院長紹介</a>
-				<a href="#clinic-point" style="font-size: 1.5vw;"><img class="icon-clinic-point" src="./images/clinic-point.png"> クリニック紹介</a>
-				<a href="#flow" style="font-size: 2vw;"><img class="icon-flow" src="./images/flow.png"> 診療の流れ</a>
+				<a href="#clinic-point" class="header-nav-text1" style="font-size: 1.5vw;"><img class="icon-clinic-point" src="./images/clinic-point.png"> クリニック紹介</a>
+				<a href="#flow" class="header-nav-text1"style="font-size: 2vw;"><img class="icon-flow" src="./images/flow.png"> 診療の流れ</a>
 				<a href="#treatment"><img class="icon-treatment" src="./images/treatment.png"> 診療内容</a>
 				<a href="#footer"><img class="icon-map" src="./images/map.png"> アクセス</a>
 		</section>
@@ -41,7 +41,7 @@ import { SEO } from "astro-seo";
 			<p class="notify title" id="notify">お知らせ</p>
 			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
 		</section>
-		<p class="introduction title" id="introduction">院長紹介</p>
+		<p class="title" id="introduction">院長紹介</p>
 		<div class="wrap1-intro-pc-sub"><img class="introduction-image" src="./images/introduction.jpg" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像"></div>
 		<section class="wrap1-introduction">
 			<div class="wrap1-intro-pc">
@@ -428,7 +428,6 @@ import { SEO } from "astro-seo";
 		gap: 2vh;
 	}
 
-
 	.header-label-text {
 		position: relative;
 		font-weight: 700;
@@ -456,10 +455,17 @@ import { SEO } from "astro-seo";
 		white-space: nowrap;
 	}
 
+	.header-label-text1 {
+		font-size: 1vw;
+	}
+
+	.header-nav-text2 {
+		font-size: 1.5vw;
+	}
+
 	.header-nav img {
 		width: 7vw;
 	}
-
 
 	.main-bg {
 		position: absolute;
@@ -803,13 +809,14 @@ import { SEO } from "astro-seo";
 	@media screen and (min-width: 1000px) {
 
 	.title {
-		font-size: 4vw;
+		font-size: 3vw;
 		padding-top: 6vh;
 		padding-bottom: 8vh;
 	}
 	
 	.wrap1 {
-		gap: 32px;
+		gap: 0px;
+		padding: 8vw;
 	}
 
 	.wrap2 {
@@ -853,7 +860,7 @@ import { SEO } from "astro-seo";
 
 	.header-nav a {
 		flex: 1; /* これが重要！ */
-		font-size: 2vw;
+		font-size: 1vw;
 		width: auto;
 		display: flex;
 		flex-direction: column;
@@ -862,9 +869,17 @@ import { SEO } from "astro-seo";
 		gap: 1vh;
 	}
 
-	.header-nav img {
-		width: 3vw;
+	.hader-nav-text1 {
+		font-size: 1.5vw;
 	}
+
+	.hader-nav-text2 {
+		font-size: 2vw;
+	}
+
+	.header-nav img {
+		width: 2vw;
+	} 
 
 	.main-bg {
 		height: 85vh;
@@ -915,7 +930,7 @@ import { SEO } from "astro-seo";
 
 	.main-image-description4 {
 		position: relative;
-		top:4vh;
+		top:6vh;
 		font-size: 2vw;
 	}
 
@@ -923,6 +938,10 @@ import { SEO } from "astro-seo";
 		position: relative;
 		left: 14vw;
 		width: 80%;
+	}
+
+	.wrap1-notification {
+		padding-top: 0px;
 	}
 
 	.wrap1-introduction {
@@ -944,34 +963,36 @@ import { SEO } from "astro-seo";
 	}
 
 	.introduction-image {
-		width: 48%;
-		height: 600px;
+		width: 420px;
+		height: 480px;
 		object-fit: cover;
 		border-radius: 12px;
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+		/* padding-bottom: 24px; */
 	}
 
 	.introduction-job {
-		font-size: 3vw;
-		padding-top: 0px;
+		font-size: 2.5vw;
+		padding-top: 24px;
 	}
 
 	.introduction-name {
-		font-size: 4vw;
+		font-size: 3vw;
 	}
 	
 	.introduction-description {
-		font-size: 2vw;
+		font-size: 1.5vw;
 		line-height: 6vh;
+		padding-top: 40px;
 	}
 
 	.introduction-subtitle {
-		font-size: 3vw;
-		padding-top: 64px;
+		font-size: 2vw;
+		padding-top: 180px;
 	}
 
 	.introduction-history {
-		font-size: 2vw;
+		font-size: 1.5vw;
 		padding-top: 24px;
 		line-height: 4vh;
 	}
@@ -1021,10 +1042,16 @@ import { SEO } from "astro-seo";
 		width: 80%;
 		padding-left: 10%;
 		object-fit: cover;
+		padding-bottom: 40px;
+	}
+
+	.wrap2-flow {
+		padding: 64px 0 24px 0;
 	}
 
 	.flow-description {
-		font-size: 3vw;
+		font-size: 2vw;
+		line-height: 3vw;
 	}
 
 	.wrap2-treatment-pc {
@@ -1036,7 +1063,7 @@ import { SEO } from "astro-seo";
 	.treatment-content-detail {
 		font-weight: 500;
 		font-size: 1.5vw !important;
-		padding: 12px 24px;
+		padding: 6px 24px;
 		margin: 2vw 0;
 	}
 
@@ -1045,7 +1072,7 @@ import { SEO } from "astro-seo";
 	}
 
 	.map-subtitle {
-		font-size: 3vw;
+		font-size: 2.5vw;
 		padding-top: 32px;
 	}
 
@@ -1061,12 +1088,19 @@ import { SEO } from "astro-seo";
 		font-size: 1.5vw;
 	}
 
+	.wrap3-footer {
+		padding: 32px 64px 200px 64px;
+	}
+
 	.wrap3-footer-pc {
 		display: flex;
 		flex-direction: row;
 		gap: 4vw;
 	}
-}
 
+	.calender-image {
+    	width: 44vw;
+	}	
+}
 </style>
 </html>
