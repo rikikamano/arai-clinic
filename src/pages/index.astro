@@ -17,12 +17,12 @@ import { SEO } from "astro-seo";
 	<header class="header-label">
 		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
 		<section class="header-nav">
-				<a href="#notify"> <img class="icon-notify" src="./images/notify.png"> お知らせ</a>
-				<a href="#introduction"><img class="icon-intro" src="./images/intro.png"> 院長紹介</a>
-				<a href="#clinic-point" class="header-nav-text1" style="font-size: 1.5vw;"><img class="icon-clinic-point" src="./images/clinic-point.png"> クリニック紹介</a>
-				<a href="#flow" class="header-nav-text1"style="font-size: 2vw;"><img class="icon-flow" src="./images/flow.png"> 診療の流れ</a>
-				<a href="#treatment"><img class="icon-treatment" src="./images/treatment.png"> 診療内容</a>
-				<a href="#footer"><img class="icon-map" src="./images/map.png"> アクセス</a>
+				<a href="#notify" class="header-nav-text1"> <img class="icon-notify" src="./images/notify.png"> お知らせ</a>
+				<a href="#introduction" class="header-nav-text2"><img class="icon-intro" src="./images/intro.png"> 院長紹介</a>
+				<a href="#clinic-point" class="header-nav-text3"><img class="icon-clinic-point" src="./images/clinic-point.png"> クリニック紹介</a>
+				<a href="#flow" class="header-nav-text4"><img class="icon-flow" src="./images/flow.png"> 診療の流れ</a>
+				<a href="#treatment" class="header-nav-text5"><img class="icon-treatment" src="./images/treatment.png"> 診療内容</a>
+				<a href="#footer" class="header-nav-text6"><img class="icon-map" src="./images/map.png"> アクセス</a>
 		</section>
 	</header>
 	<img class="main-bg" src="./images/top-sky.jpeg" >
@@ -445,18 +445,18 @@ import { SEO } from "astro-seo";
 
 	.header-nav a {
 		flex: 1; /* これが重要！ */
-		font-size: 2.5vw;
-		width: auto;
+		width: 10vw;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		gap: 2vw;
 		white-space: nowrap;
+		font-size: 2vw;
 	}
 
-	.header-label-text1 {
-		font-size: 1vw;
+	.header-nav-text1 {
+		font-size: 24px;
 	}
 
 	.header-nav-text2 {
@@ -845,7 +845,7 @@ import { SEO } from "astro-seo";
 	.header-label-text {
 		position: relative;
 		font-weight: 700;
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 		line-height: 5vw;
 		text-align: center;
 		color: #F5F5F7;
@@ -854,7 +854,7 @@ import { SEO } from "astro-seo";
 	.header-nav {
 		display: flex;
 		flex-direction: row;
-		gap: 8vw;
+		gap: 12vw;
 		padding-bottom: 2vh;
 	}
 
@@ -867,14 +867,6 @@ import { SEO } from "astro-seo";
 		align-items: center;
 		justify-content: center;
 		gap: 1vh;
-	}
-
-	.hader-nav-text1 {
-		font-size: 1.5vw;
-	}
-
-	.hader-nav-text2 {
-		font-size: 2vw;
 	}
 
 	.header-nav img {
