@@ -13,7 +13,6 @@
     "autoprefixer": "^10.4.7"
   },
   "dependencies": {
-    "@fontsource/noto-sans-jp": "^4.5.11",
     "astro-seo": "^0.6.0"
   }
 }

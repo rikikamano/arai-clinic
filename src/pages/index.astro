@@ -5,149 +5,377 @@ import { SEO } from "astro-seo";
 
 <html lang="jp">
   <head>
+	<meta charset="UTF-8">
     <SEO
       title="あらい腎泌尿器科クリニック｜三田のアットホームな泌尿器科"
-      description="あらい腎泌尿器科クリニックは大阪大学卒の医師が院長をつとめる泌尿器科です。男性、女性子供問わず三田で患者様に寄り添った治療を目指して診療しております。お気軽にご来診ください。" 
-    />
-  </head>
+      description="あらい腎泌尿器科クリニックは大阪大学卒の医師が院長をつとめる泌尿器科です。男性、女性子供問わず三田で患者様に寄り添った治療を目指して診療しております。お気軽にご来診ください。" />
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&display=swap" rel="stylesheet">
+	</head>
 <body>
-
-	<section class="main-image content">
-		<img class="main-image-content" src="./images/top-green.png" alt="あらいクリニックをイメージする緑のイメージ画像">
-		<span class="main-image-text1">患者様の笑顔のために🍀 </span>
-		<span class="main-image-text2">🍀よりそう診療を目指して</span>
-
-		<img class="main-logo" src="./images/logo.png" alt="あらい腎泌尿器科クリニックのロゴ">
+	<header class="header-label">
+		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
+		<section class="header-nav">
+				<a href="#notify" class="header-nav-text1"> <img class="icon-notify" src="./images/notify.png"> お知らせ</a>
+				<a href="#introduction" class="header-nav-text2"><img class="icon-intro" src="./images/intro.png"> 院長紹介</a>
+				<a href="#clinic-point" class="header-nav-text3"><img class="icon-clinic-point" src="./images/clinic-point.png"> クリニック紹介</a>
+				<a href="#flow" class="header-nav-text4"><img class="icon-flow" src="./images/flow.png"> 診療の流れ</a>
+				<a href="#treatment" class="header-nav-text5"><img class="icon-treatment" src="./images/treatment.png"> 診療内容</a>
+				<a href="#footer" class="header-nav-text6"><img class="icon-map" src="./images/map.png"> アクセス</a>
+		</section>
+	</header>
+	<img class="main-bg" src="./images/top-sky2.png" >
+	<section class="main-image">
+		<div><img class="main-logo" src="./images/logo8.png" alt="あらい腎泌尿器科クリニックのロゴ"><span class="main-image-text1">(仮称)</span></div>
+		<span class="main-image-text1">患者様の笑顔のために </span>
+		<span class="main-image-text2">よりそう診療を目指して</span>
+		<span class="main-image-description1">TEL:<a>079-553-8886</a></span>
+		<span class="main-image-description2">〒669-1323 兵庫県三田市あかしあ台1-49-1</span>
+		<span class="main-image-description3">スギドラッグあかしあ台店 向かい</span>
+		<span class="main-image-description4"><span>大阪大学医学部卒業</span> 院長 新井浩樹</span>
 	</section>
 
 	<section class="wrap1">
-	
-		<section class="wrap2-introduction wrap-item">
-			<p class="introduction title">院長紹介</p>
-			<img class="introduction-image" src="./images/introduction.jpg" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像">
-			<p class="introduction-job">院長</p>
-			<p class="introduction-name">新井浩樹</p>
-			<aside class="introduction-description">この度良いご縁があり、<br>いわもと泌尿器科を継承させていただくこととなりましたあらい腎泌尿器科クリニックの院長、新井浩樹です。<br><br>
-				1997年に大阪大学医学部医学科を卒業後、25年間に渡り6つの総合病院で臨床経験を積んで参りました。<br><br>これまでの経験を活かし、ご来院くださるすべての患者様に信頼される医療を提供できますよう、日々の精進を欠かさず頑張っていく決意でございます。
-				<br><br>
-				些細なことでもお気軽にご相談ください
-
-				<hr>
-
-				<aside class="introduction-history">
-				<p class="introduction-subtitle">経歴、職歴</p>
-				<br><br>
-				●1997 大阪大学医学部医学科 卒業
-				<br><br>
-				●1997〜1998 大阪大学医学部付属病院勤務（研修医）
-				<br>
-				各種検査、手術助手、入院患者さんの受け持ちなど基本的なことを学ぶ。
-				<br><br>
-				●1998〜1999  大阪警察病院勤務（研修医）現：大阪けいさつ病院
-				<br>基本的なことに加えて執刀医、外来担当などに従事。
-				<br><br>
-				●1999〜2001  国立大阪病院勤務 現：国立病院機構 大阪医療センター
-				<br>
-				敷地内住み込みで勤務し、昼夜を問わず泌尿器科疾患の緊急対応に従事。
-				<br><br>
-				●2001〜2004 日本生命済生会 日生病院勤務
-				<br>
-				成人病センター(現：大阪国際がんセンター)に長年にわたり勤務されておられた<br>阪大の恩師のもと、癌治療について学ぶ。
-				<br><br>
-				●2004〜2008 東大阪市立総合病院勤務 現：市立東大阪医療センター
-				<br>
-				外来診察、手術件数ともに多く、誠に多忙な病院で多くの臨床経験を積む。
-				<br><br>
-				●2008〜2023 公立学校共済組合
-				<br>近畿中央病院
-				<br>
-				長年に渡りひとりの患者様を担当することで初診から手術、術後の定期検査、再発時の治療など先を見通した細やかな対応を心がけてきました。
-				<br><br>
-				将来のことを考え開業準備を進めておりましたところ、良いご縁をいただき、<br>いわもと泌尿器科を継承させていただくこととなりました。
-				<br><br>
-				<p class="introduction-subtitle">これまでの臨床経験</p>
-				<br><br>
-				副腎癌、腎臓癌、尿管癌、膀胱癌、尿道癌、尿膜管癌、前立腺癌、精巣癌、陰茎癌、後腹膜腫瘍、腎移植、停留精巣、陰嚢水腫、包茎、腎結石、尿管結石、膀胱結石、尿道結石、前立腺肥大症、神経因性膀胱、尿失禁、水腎症、男性不妊症、間質性膀胱炎、腎盂腎炎、膀胱炎、前立腺炎、尿道炎、性感染症など。
-				<br><br>
-				その他、泌尿器科疾患全般を経験しております。
-				<br><br>
-				<p class="introduction-job">主な手術件数(25年間の概算)</p>
-				<br><br>
-				●開腹手術
-				<div class="introduction-detail">
-				<p>根治的膀胱全摘除術(膀胱癌の手術) 70</p>
-				<p>根治的前立腺全摘除術(前立腺癌の手術) 50</p>
-				<p>根治的腎摘除術（腎臓癌の手術)30</p>
-				</div>
-				<br><br>
-				●腹腔鏡手術
-				<div class="introduction-detail">
-				<p>腹腔鏡下副腎摘除術(副腎腫瘍の手術) 20</p>
-				<p>腹腔鏡下腎摘除術(腎臓癌の手術) 100</p>
-				<p>腹腔鏡下腎部分切除術(腎臓癌の手術)50</p>
-				<p>腹腔鏡下前立腺全摘除術(前立腺癌の手術) 50</p>
-				</div>		
-				<br><br>
-				●経尿道的手術
-				<div class="introduction-detail">
-				<p>経尿道的膀胱腫瘍切除術(膀胱癌の手術) 1700</p>
-				<p>経尿道的前立腺切除術(前立腺肥大症の手術) 500</p>
-				<p>経尿道的尿路結石破砕術(尿路結石の手術) 1000</p>
-				<p>経尿道的尿管ステント留置術(尿管狭窄の手術) 2000</p>
-				<p>内視内尿道切開術(尿道狭窄の手術)50</p>
-				</div>
-				<br><br>				
-				●その他
-				<div class="introduction-detail">
-				<p>包茎手術　100</p>
-				<p>精巣固定術(小児の停留精巣の手術) 50</p>
-				<p>高位除睾術(精巣癌の手術) 40</p>
-				<p>前立腺生検(前立腺の組織検査) 1500</p>
-				<p>腎瘻増設術(水腎症のカテーテル手術) 100</p>
-				<p>体外衝撃波結石破砕術（破砕装置による結石の手術） 1500</p>
-				<br><br>
-				<p class="introduction-subtitle">所属学会、資格</p>
-				<br><br>
-				<div class="introduction-detail">
-				<p>日本泌尿器科学会認定泌尿器科専門医</p>
-				<p>日本泌尿器科学会認定泌尿器科指導医</p>
-				<p>日本泌尿器内視鏡・ロボティクス学会</p>
-				<p>泌尿器腫瘍学会</p>
-				<p>緩和ケア研修会修了</p>
-				</div>
-				<br><br>
-				<p class="introduction-subtitle">論文</p>
-				<br><br>
-				膀胱内再発を来たした尿管原発小細胞癌の1例
-				上田, 倫央,小林, 泰之,新井, 浩樹,本多, 正人,吉田, 恭太郎 泌尿器科紀要 62 (2), 93-97, 2016-02-29　A 63-year-old man who presented with asymptomatic gross hematuria was referred to our hospital. Left ureteral tumor (cT3N0M0) was diagnosed and left nephroureterectomy was performed. Pathological exam
-				<br><br>
-				膀胱原発カルチノイドの1例 : 本邦症例のアンケート調査を加えて
-				上田, 倫央,新井, 浩樹,本多, 正人,吉田, 恭太郎 泌尿器科紀要 61 (11), 445-448, 2015-11-30　An 83-year-old man presented with asymptomatic macroscopic hematuria while being treated for　prostate cancer with hormonal therapy in January 2009. Cystoscopy revealed a 5mm surface-smooth non　peduncu
-				<br><br>
-				透析腎に発生した悪性リンパ腫の1例
-				上原, 満,新井, 浩樹,室﨑, 伸和,本多, 正人,ギャヌ ラジャ, セレスタ,金宮, 健翁 泌尿器科紀要 59 (1), 17-21, 2013-01　A 71-year-old female on hemodialysis was referred to our hospital for a left renal mass which was incidentally found during a medical check-up. Abdominal computed tomography with intravenous contrast
-				<br><br>
-				化学療法とTURで膀胱温存できた膀胱原発小細胞癌の1例
-				金宮, 健翁,新井, 浩樹,室崎, 伸和,本多, 正人,吉田, 恭太郎 泌尿器科紀要 58 (3), 165-168, 2012-03　A 78-year-old man was referred to our hospital for asymptomatic gross hematuria on April 16, 2007. Cystoscopy and abdominal computed tomography revealed a nonpapillary tumor at the upper area of the b
-				<br><br>
-				排尿困難をきたした前立腺貯留性嚢胞の1例
-				金宮, 健翁,新井, 浩樹,室崎, 伸和,本多, 正人,吉田, 恭太郎 泌尿器科紀要 58 (3), 173-175, 2012-03　A 54-year-old man visited our clinic for dysuria. Transabdominal ultrasonography revealed a multilocular cyst at the neck of the bladder, and a cystoscopy revealed obstruction of the neck of the bladd
-				<br><br>
-				肺炎を伴った腎放線菌症の1例
-				金宮, 健翁,新井, 浩樹,室崎, 伸和,本多, 正人,大崎，匡,原, 紘子,吉田, 恭太郎 泌尿器科紀要 58 (3), 155-158, 2012-03　A 55-year-old man was hospitalized for pneumonia. His fever did not subside despite administration of antibiotics ; therefore, he was referred to our hospital. A chest radiograph and thoracic computed
-				膀胱上皮内癌に対するBCG膀胱内注入療法の治療成績と尿細胞診による治療効果の予測
-				佐藤 英一,新井 浩樹,後藤 隆康,三浦 秀信,本多 正人,藤岡 秀樹,浦岡 孝子,辻本 正彦 日本泌尿器科学会雑誌 90 (12), 901-905, 1999
-				<br><br>
-				</div>
+		<section class="wrap1-notification">
+			<p class="notify title" id="notify">お知らせ</p>
+			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
+		</section>
+		<p class="title" id="introduction">院長紹介</p>
+		<div class="wrap1-intro-pc-sub"><img class="introduction-image" src="./images/introduction.jpg" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像"></div>
+		<section class="wrap1-introduction">
+			<div class="wrap1-intro-pc">
+				<p class="introduction-job">院長</p>
+				<p class="introduction-name">新井浩樹</p>
+				<aside class="introduction-description">
+					この度良いご縁があり、<br>いわもと泌尿器科を継承させていただくこととなりましたあらい腎泌尿器科クリニックの院長、新井浩樹です。<br><br>
+					1997年に大阪大学医学部医学科を卒業後、25年間に渡り6つの総合病院で臨床経験を積んで参りました。<br><br>これまでの経験を活かし、ご来院くださるすべての患者様に信頼される医療を提供できますよう、日々の精進を欠かさず頑張っていく決意でございます。
+					<br><br>
+					泌尿器科というデリケートなジャンルなので「何をされるのかな?」と不安に 感じる方も多いと思いますが、 ほとんどの場合は簡単な問診と尿検査で済むことが多いです。
+					<br><br>
+					重大な病気が疑われる場合はさらに精密な検査が必要な場合もありますが、あらい腎泌尿器科クリニックではこれまでの 豊富な臨床経験をもとに患者様の状況を把握し的確な治療方針をご提案させていただきます。
+					<br><br>
+					おしっこ関連のお悩みに限らずお気軽にお問い合わせ下さい。
 				</aside>
-			</aside>
+			</div>
+			<div>
+				<aside class="introduction-history">
+					<p class="introduction-subtitle">資格、所属学会など</p>
+					<br><br>
+					1997年 大阪大学医学部医学科卒業
+					同年　医師免許取得
+					<br><br>
+					日本泌尿器科学会認定泌尿器科専門医
+					<br><br>
+					日本泌尿器科学会認定泌尿器科指導医
+					<br><br>
+					日本泌尿器内視鏡・ロボティクス学会
+					<br><br>
+					泌尿器腫瘍学会
+					<br><br>
+					緩和ケア研修会修了	
+					<br><br>
+					<details>
+						<summary class="introduction-content-detail">職歴 <img class="arrow" src="./images/arrow.png"></summary>				
+						<br><br>
+						●1997〜1998 大阪大学医学部付属病院勤務（研修医）
+						<br>
+						各種検査、手術助手、入院患者さんの受け持ちなど基本的なことを学ぶ。
+						<br><br>
+						●1998〜1999  大阪警察病院勤務（研修医）現：大阪けいさつ病院
+						<br>基本的なことに加えて執刀医、外来担当などに従事。
+						<br><br>
+						●1999〜2001  国立大阪病院勤務 現：国立病院機構 大阪医療センター
+						<br>
+						敷地内住み込みで勤務し、昼夜を問わず泌尿器科疾患の緊急対応に従事。
+						<br><br>
+						●2001〜2004 日本生命済生会 日生病院勤務
+						<br>
+						成人病センター(現：大阪国際がんセンター)に長年にわたり勤務されておられた<br>阪大の恩師のもと、癌治療について学ぶ。
+						<br><br>
+						●2004〜2008 東大阪市立総合病院勤務 現：市立東大阪医療センター
+						<br>
+						外来診察、手術件数ともに多く、誠に多忙な病院で多くの臨床経験を積む。
+						<br><br>
+						●2008〜2023 公立学校共済組合
+						<br>近畿中央病院
+						<br>
+						長年に渡りひとりの患者様を担当することで初診から手術、術後の定期検査、再発時の治療など先を見通した細やかな対応を心がけてきました。
+						<br><br>
+						将来のことを考え開業準備を進めておりましたところ、良いご縁をいただき、<br>いわもと泌尿器科を継承させていただくこととなりました。
+						<br><br>
+					</details>	
+					<details>
+						<summary class="introduction-content-detail">これまでの臨床経験 <img class="arrow" src="./images/arrow.png"></summary>
+						<br><br>
+						副腎癌、腎臓癌、尿管癌、膀胱癌、尿道癌、尿膜管癌、前立腺癌、精巣癌、陰茎癌、後腹膜腫瘍、腎移植、停留精巣、陰嚢水腫、包茎、腎結石、尿管結石、膀胱結石、尿道結石、前立腺肥大症、神経因性膀胱、尿失禁、水腎症、男性不妊症、間質性膀胱炎、腎盂腎炎、膀胱炎、前立腺炎、尿道炎、性感染症など。
+						<br><br>
+						その他、泌尿器科疾患全般を経験しております。
+					</details>	
+					<details>
+						<summary class="introduction-content-detail">主な手術件数(25年間の概算)<img class="arrow" src="./images/arrow.png"> </summary>
+						●開腹手術
+						<div class="introduction-detail">
+						<p>根治的膀胱全摘除術(膀胱癌の手術) 70</p>
+						<p>根治的前立腺全摘除術(前立腺癌の手術) 50</p>
+						<p>根治的腎摘除術（腎臓癌の手術)30</p>
+						</div>
+						<br><br>
+						●腹腔鏡手術
+						<div class="introduction-detail">
+						<p>腹腔鏡下副腎摘除術(副腎腫瘍の手術) 20</p>
+						<p>腹腔鏡下腎摘除術(腎臓癌の手術) 100</p>
+						<p>腹腔鏡下腎部分切除術(腎臓癌の手術)50</p>
+						<p>腹腔鏡下前立腺全摘除術(前立腺癌の手術) 50</p>
+						</div>		
+						<br><br>
+						●経尿道的手術
+						<div class="introduction-detail">
+						<p>経尿道的膀胱腫瘍切除術(膀胱癌の手術) 1700</p>
+						<p>経尿道的前立腺切除術(前立腺肥大症の手術) 500</p>
+						<p>経尿道的尿路結石破砕術(尿路結石の手術) 1000</p>
+						<p>経尿道的尿管ステント留置術(尿管狭窄の手術) 2000</p>
+						<p>内視内尿道切開術(尿道狭窄の手術)50</p>
+						</div>
+						<br><br>				
+						●その他
+						<div class="introduction-detail">
+						<p>包茎手術　100</p>
+						<p>精巣固定術(小児の停留精巣の手術) 50</p>
+						<p>高位除睾術(精巣癌の手術) 40</p>
+						<p>前立腺生検(前立腺の組織検査) 1500</p>
+						<p>腎瘻増設術(水腎症のカテーテル手術) 100</p>
+						<p>体外衝撃波結石破砕術（破砕装置による結石の手術） 1500</p>
+						<br><br>
+						</div>
+					</details>	
+				</aside>
+			</div>
 		</section>
 	</section>
+
+	<section class="wrap2">
+		<section class="wrap2-clinic-point">
+			<p class="clinic-point title" id="clinic-point">クリニック案内</p>
+			<div class="wrap-image-clinic">
+				<div class="clinic-point-content">
+					<span class="clinic-point-text1">準備中<br>準備中</span>
+					<img class="clinic-point-image" src="./images/clinic-point-blank.jpeg" alt="あらい腎泌尿器科の押しポイント1">
+				</div>
+
+				<div class="clinic-point-content">
+					<span class="clinic-point-text">準備中</span>
+					<img class="clinic-point-image" src="./images/clinic-point-blank.jpeg" alt="あらい腎泌尿器科の押しポイント2">
+				</div>
+
+				<div class="clinic-point-content">
+					<span class="clinic-point-text">準備中</span>
+					<img class="clinic-point-image" src="./images/clinic-point-blank.jpeg" alt="あらい腎泌尿器科の押しポイント3">
+				</div>
+			</div>
+		</section>
+		<section class="wrap2-flow" id="flow">
+			<p class="flow title">診療の流れ</p>
+			<img class='clinic-flow-image' src="./images/clinic-flow.png" alt="あらい腎泌尿器科の診察の流れ">
+			<span class="flow-description">診察結果によっては<br>精密検査をご案内いたします。</span>
+		</section>
+		<section class="wrap2-treatment" id="treatment">
+			<p class="treatment title">診療内容</p>
+			<div class="wrap2-treatment-pc">
+			<div class="section-treatment-pc">
+				<details>
+					<summary class="treatment-content-detail">尿に血が混じる。血尿を指摘された　<img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						健診や病院での尿検査で、「おしっこに血が混じってます」とか「尿潜血陽性です」とかいわれることがあると思います。
+						<br><br>
+						おしっこが赤いなど、尿に血が混じることを目でみて判断できる肉眼的血尿はさらに重要な病気のサインです。
+						<br><br>
+						がんなどの重要な病気の危険信号の場合がありますので、至急受診してください。
+					</span>
+				</details>
+				<details>
+					<summary class="treatment-content-detail">尿が近い、尿の回数が多い～頻尿～ <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						「尿が近い、尿の回数が多い」という症状を頻尿といいます。一般的には、朝起きてから就寝までの排尿回数が8回以上の場合を頻尿といいます。
+						<br><br>
+						しかし、1日の排尿回数は人によって様々ですので、一概に1日に何回以上の排尿回数が異常とはいえず、8回以下の排尿回数でも自分自身で排尿回数が多いと感じる場合には頻尿といえます。
+						<br><br>
+						お薬などの治療で改善が期待できますので、お気軽にご相談ください。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">夜間、何度も排尿で起きる <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						夜間、排尿のために1回以上起きなければならない症状を夜間頻尿といいます。加齢とともに頻度が高くなります。
+						<br><br>
+						夜間頻尿は、日常⽣活において支障度の高い症状です。お薬などの治療で改善が期待できますので、ぜひご相談ください。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">尿が漏れる・尿失禁がある <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						尿失禁とは自分の意思とは関係なく尿が漏れてしまうことと定義づけられています。
+						<br><br>
+						40歳以上の女性の4割以上が経験しており、実際に悩んでおられる方は実は大変に多いのですが、恥ずかしいので我慢している方がほとんどです。
+						<br><br>
+						尿失禁の状態や原因に応じてきちんとした治療法がありますので、我慢せずに泌尿器科を受診してください。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">尿が出にくい・尿の勢いが弱い・尿をするのに時間がかかる <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						「尿が出にくい・尿の勢いが弱い・尿をするのにお腹に力を入れる」などの排尿症状は、膀胱から尿道出口への尿の通過が妨げられる場合（通過障害）、あるいは膀胱がうまく収縮できない（膀胱収縮障害）場合に起こります。
+						<br><br>
+						通過障害で最も頻度の高いものは男性における前立腺肥大症です。膀胱収縮障害は男女とも神経因性膀胱で起こります。また、膀胱収縮障害は、メタボリック症候群に伴う膀胱の血流障害や加齢による膀胱の老化現象としてみられることもあります。
+						<br><br>
+						放置すると尿が出なくなる恐れもありますので、我慢せずに泌尿器科を受診してください。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">尿が残っている感じがある　～残尿感～ <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						残尿感とは、おしっこをした（排尿）後も、「尿が出きっていない感じ」、「尿が残っている感じ」があるという症状です。
+						<br><br>
+						実際に尿が残っていることもありますし、尿が残っていないのに残尿感を感じることもあります。細菌感染症などの可能性がありますので、我慢せずに泌尿器科を受診してください。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">排尿痛がある、排尿時に痛い <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						尿道から侵入した細菌によって起こる感染症のことが多いです。その他に、尿道結石、間質性膀胱炎、膀胱や尿道の悪性腫瘍などの特殊な疾患が排尿時痛に関与することもあります。
+						<br><br>
+						お薬などの治療で改善が期待できますので、ぜひご相談ください。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">PSAが高いと言われた <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						PSA(ピーエスエー)は「前立腺特異抗原、prostate-specific antigen」の略語で、前立腺の上皮細胞から分泌されるタンパクであり、前立腺がんの腫瘍マーカーです。
+						<br><br>
+						一般的には4ng/mL以上になった場合に「PSAが高い」と言われ、前立腺がんを疑って精密検査が必要になります。
+					</span>
+				</details>	
+			</div>		
+			<div class="section-treatment-pc">
+				<details>
+					<summary class="treatment-content-detail">おねしょ(夜尿症）が治らない <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						子どものおねしょは、「5歳以上で1か月に1回以上の頻度で夜間睡眠中の尿失禁を認めるものが3か月以上つづくもの」と定義されます。
+						<br><br>
+						7歳児における夜尿症の有病率(病気をもっている人の割合)は10%程度とされ、その後は年間15%ずつ自然に治るとされますが、0.5~数％は夜尿が解消しないまま成人に移行するといわれています。
+						<br><br>
+						生活指導をはじめとする治療介入により、自然経過に比べて治癒率を2~3倍、高めることができ、治癒までの期間が短縮するといわれています。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">「子供の精巣が降りていない」と言われた <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						精巣は胎児期にお腹の中で発生し、出生前に陰嚢内まで下降していきます。精巣の下降が不完全で陰嚢内に触知しない状態を「停留精巣」といいます。
+						<br><br>
+						乳児検診で「停留精巣」と指摘された時も、泌尿器科に受診して相談して下さい。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">睾丸（精巣）が腫れてきた・陰嚢（内容）が大きくなってきた <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						入浴中などに突然、自分の睾丸（精巣）が腫れているのに気づく。
+						<br><br>
+						痛みも何も無い。痛くないし恥ずかしいからとなかなか受診されない方もおられますが、悪性の精巣腫瘍の可能性もありますので、勇気を出して泌尿器科を受診ください。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">陰嚢内が痛い <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						陰嚢（いんのう）内が痛む病気には、精巣捻転（せいそうねんてん）、精巣上体炎（せいそうじょうたいえん）（別称：副睾丸炎：（ふくこうがんえん））、精巣垂（せいそうすい）や精巣上体垂（せいそうじょうたいすい）などの捻転、および精巣炎などがあります。
+						<br><br>
+						これらはいずれも比較的急速に発症するために急性陰嚢症と呼ばれます。また、そけいヘルニア（脱腸）を陰嚢の症状とあやまる場合も時にはあります。
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">腎臓のあたりが痛む <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						腎臓は手を後ろに回してわき腹と背骨の中間あたりの場所にあります。ちょうど腰が痛い時にとんとんと叩く場所をイメージしてください。
+						<br><br>
+						腎臓は尿を作る臓器です。体の老廃物を尿として排出します。その他にも血圧に関係する物質を作ります。
+						<br><br>
+						普段は何も感じませんが、何らかの原因で痛みを生じる時がありますので、少しでも異常があれば早めにご相談ください。					
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">勃起力（ぼっきりょく）が低下した <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						EDを自覚したら泌尿器科を受診してください。全身疾患の前触れかもしれません。高血圧や糖尿病が見つかるかもしれません。
+						<br><br>
+						そのような病気があれば、その治療も行い、そしてEDの治療も積極的に受けてください。ED治療薬は勃起を良くするだけではなく、全身の血管の働きも良くする作用も認められています。現在3種類のED治療薬が使用できます。
+						<br><br>
+						インターネットなどで販売されている薬は偽物が多く、有害な物質が含まれている可能性があるので、決して手を出さないようにしてください。					
+					</span>
+				</details>			
+				<details>
+					<summary class="treatment-content-detail">精液が赤くなった、精液に血が混じる(血精液症) <img class="arrow" src="./images/arrow.png"></summary>
+					<span>
+						血精液症とは、精液に血液が混入し、精液が赤色調を示す状態のことを指します。射精した際に気づくことになりますので、急な変化に驚いたり、心配になる方も少なくありません。
+						<br><br>
+						多くの場合痛みなど他の症状は伴いませんが、色調は鮮紅色が混ざったものから茶褐色調まで様々で、時に血の塊が混ざることもあります。まれですが癌などの重大な病気のサインのこともありますので、泌尿器科を受診ください。
+					</span>
+				</details>
+			</div>
+			</div>
+		</section>
+	</section>
+
+	<footer class="wrap3-footer" id="footer">  
+		<p class="clinic-info title">クリニック情報</p>
+		<section class="wrap3-footer-pc">
+		<div class="section-footer-pc">
+			<p class="map-subtitle">住所</p>
+			<p class="map-content">〒669-1323 兵庫県三田市あかしあ台 1-49-1</p>
+			<p class="map-subtitle">電話番号</p>
+			<p class="map-content">079-553-8886</p>
+			<p class="map-subtitle">アクセス</p>
+			<span class="map-content">
+				三田ウッディタウン<br>あかしあ台コミュニティハウス前<br>スギドラッグあかしあ台店 向かい
+				<br><br>
+				<details>
+					<summary class="map-content-detail">電車 <img class="arrow" src="./images/arrow.png"></summary>
+					神戸電鉄「南ウッディタウン駅」で下車し、はじかみ池公園に沿って徒歩約8分です(ゆるやかな上り坂）。途中の踏切のモニュメントがあるところからは、公園に沿わずに道路を渡ってウッディタウン動物病院の横を通ればすぐです。				
+					<br><br>
+				</details>
+				<details>
+					<summary class="map-content-detail">バス <img class="arrow" src="./images/arrow.png"></summary>
+					JR新三田駅から神姫バスを利用し、1番乗り場から41系統のバスにお乗りください。「コミュニティホール前」バス停で降りてすぐです。				
+					<br><br>
+				</details>
+				<details>
+					<summary class="map-content-detail">車 <span>クリニック横に約18台分の駐車場完備</span> <img class="arrow" src="./images/arrow.png"></summary>
+					■新三田駅方面から
+					<br><br>
+					三田市民病院前の道を、ウッディタウン内へ西に進んでください。三田幹線（神戸電鉄)ガードから3つ目信号(ローソンを超えて2つ目)を左にまがり、200m先の右側にあります。				<br><br>
+					■フラワータウン、神戸市方面から
+					<br><br>
+					三田幹線南ウッディタウン（ミドリ電化、阪急オアシスのところ)で側道に降り、降りたところの信号を左折。すぐのローソンを超えて2つめ信号左折。道沿い200m先右側。
+					<br><br>
+					■テクノパーク方面から
+					<br><br>
+					三田幹線南ウッディタウン(ミドリ電化、阪急オアシスが目印です)で側道に降り、降りたところの信号を右折。右折してすぐのローソンを超えて、2つ目の信号を左折。道沿いに進み、200m先右側にあります。
+					<br><br>
+				</details>
+			</span>
+		</div>
+		<div class="wrap-footer-pc">
+			<iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3272.3412307221233!2d135.1845661!3d34.8978853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000650720017c01%3A0xdfaf2e3dbf3abcd4!2z44GE44KP44KC44Go5rOM5bC_5Zmo56eR!5e0!3m2!1sja!2sjp!4v1661932774319!5m2!1sja!2sjp" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+			<br><br>
+			<p class="map-subtitle">診療時間</p>
+			<br><br>
+			<img class="calender-image" src="./images/calender.png" alt="あらい腎泌尿器科クリニックの診療時間">
+			<br><br>
+		</div>
+		</section>
+	</footer>
 </body>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
-@media screen and (max-width: 1000px) {
+	
 	body {
 		font-family: 'Noto Sans JP', sans-serif;
 		width: 100vw;
@@ -155,211 +383,193 @@ import { SEO } from "astro-seo";
 		flex-direction:column;
 		align-items: center;
 	}
-	
+
+	a, a:link, a:visited, a:hover, a:active {
+  		color:#FFFFFF;
+	}
+
 	.wrap1 {
-		background: #F5F5F7;
+		background: #FFFFFF;
 		display: flex;
 		flex-direction: column;
 		padding: 64px;
-		gap: 240px;
+		gap: 120px;
 	}
+
 	.wrap2 {
 		display: flex;
 		flex-direction: column;
-		padding: 240px 64px;
-		gap: 240px;
+		padding-top: 240px;
+		padding-bottom: 120px;
+		gap: 120px;
 	}
-	iframe { 
-		width: 86vw;
-		height: 30vh; 
-	}
+
 	.title {
 		font-weight: 700;
 		font-size: 7vw;
 		color: rgba(0, 0, 0, 0.87);
 		position: relative;
 		left: 0vw;
-		padding-bottom: 8vw;
+		padding-top:6vw;
+		padding-bottom:8vw;
 	}
+
 	.header-label {
 		background: #2687FF;
+		bottom: 0;
 		position: fixed;
 		width: 100vw;
-		height: 16vw;
-		left: 0%;
-		right: 0%;
-		top: 0px;
+		height: auto;
 		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 3vw 0;
+		gap: 2vh;
 	}
+
 	.header-label-text {
-		position: absolute;
-		height: 4px;
-		left: 38px;
-		right: 37px;
-		top:32px;
+		position: relative;
 		font-weight: 700;
 		font-size: 3.5vw;
 		line-height: 5vw;
 		text-align: center;
 		color: #F5F5F7;
 	}
-	.main-image {
-		position: relative;
-		width:100vw;
-		height: 64vh;
-		left: 0px;
-		display:-webkit-flex;
-		display:-ms-flexbox;
+
+	.header-nav {
 		display: flex;
-		flex-direction:column;
-		align-items: center;
+		flex-direction: row;
+		gap: 5.5vw;
 	}
-	.main-image-content {
+
+	.header-nav a {
+		flex: 1; /* これが重要！ */
+		width: 10vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2vw;
+		white-space: nowrap;
+		font-size: 2vw;
+	}
+
+	.header-nav-text1 {
+		font-size: 24px;
+	}
+
+	.header-nav-text2 {
+		font-size: 1.5vw;
+	}
+
+	.header-nav img {
+		width: 7vw;
+	}
+
+	.main-bg {
+		position: absolute;
 		width: 100vw;
 		height: 80vh;
 		object-fit: cover;
 	}
+
+	.main-image {
+		position: relative;
+		width:100vw;
+		height: 80vh;
+		padding:0px 0px;
+		display:-webkit-flex;
+		display:-ms-flexbox;
+		display: flex;
+		justify-content: center;
+		flex-direction:column;
+		align-items: center;
+	}
+
+
+	.main-logo {
+		top: -3vh;
+		left: 3vw;;
+		height: 21vw;
+		position: relative;
+
+	}
+
 	.main-image-text1 {
-		position: absolute;
-		top: 26vh;
-		left: 18vw;
-		font-weight: 900;
-		font-size: 6vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+		position: relative;
+		top:2vw;
+		font-weight: 500;
+		font-size: 5vw;
+		color: #595656;
 	}
+
 	.main-image-text2 {
-		position: absolute;
-		top: 32vh;
-		left: 12vw;
-		font-weight: 900;
-		font-size: 6vw;
+		position: relative;
+		top:3vw;
+		font-weight: 500;
+		font-size: 5vw;
 		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+		color: #595656;
 	}
+
 	.main-image-description1 {
-		position: absolute;
-		top: 41vh;
-		left: 15vw;
+		position: relative;
+		top:6vw;
 		font-weight: 900;
 		font-size: 8vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+		color: #595656;
 	}
 	.main-image-description1 a {
+		position: relative;
 		text-decoration:none;
-		color: #FFFFFF;
+		color: #595656;
 	}
+
 	.main-image-description2 {
-		position: absolute;
-		top: 48vh;
-		left: 12vw;
+		position: relative;
+		top:12vw;
 		font-weight: 500;
 		font-size: 4vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+		color: #595656;
 	}
+
 	.main-image-description3 {
-		position: absolute;
-		top: 52vh;
-		left: 36vw;
+		position: relative;
+		top:16vw;
 		font-weight: 700;
 		font-size: 4vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+		color: #595656;
 	}
-	.main-logo {
-		position: absolute;
-		top: 18vh;
-		height: 12vw;
-		left: 9vw;
+
+	.main-image-description4 span {
+		font-size: 3.5vw;
 	}
-	.button-body {
-		position: fixed;
-		bottom: 6vh;
-		width: 300px;
-		height: 120px;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		padding: 16px 32px;
-		background: rgba(255, 255, 255, 0.8);
-		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-		backdrop-filter: blur(4px);
-		border-radius: 120px;
-		z-index: 2;
+
+	.main-image-description4 {
+		position: relative;
+		top:20vw;
+		font-weight: 700;
+		font-size: 4.5vw;
+		color: #595656;
 	}
-	.button-content1 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 2vw;
-		padding-bottom: 1vw;
-		width: 100%;
-		height: 100%;
-	}
-	.button-content2 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 2.5vw;
-		padding-left: 0.5vw;
-		padding-bottom: 1vw;
-		width: 100%;
-		height: 100%;
-	}
-	.button-text1 {
-		font-weight: 500;
-		font-size: 30px;
-		color: rgba(0, 0, 0, 0.87);
-		padding-top: 16px;
-	}
-	.button-text2 {
-		font-weight: 500;
-		font-size: 28px;
-		color: rgba(0, 0, 0, 0.87);
-		padding-top: 18px;
-	}
-	.button-image {
-		width: 40px;
-		padding-top: 12px;
-	}
-	.wrap-item {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start; 	
-	}
-	.wrap2-notification {
+
+	.wrap1-notification {
 		padding-top: 64px;
 	}
-	.twitter-timeline {
-		border-radius: 40px;
-	}
-	.wrap2-introduction {
+
+	.wrap1-introduction {
 		background: #FFFFFF;
 		border-radius: 40px;
-		padding-top: 120px;
-		padding-bottom: 120px;
-		padding-left: 6vw;
-		padding-right: 6vw;
 	}
+
 	.introduction-image {
 		width: 100%;
 		object-fit: cover;
 		border-radius: 40px;
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
 	}
+
 	.introduction-job {
 		font-weight: 500;
 		font-size: 5vw;
@@ -367,6 +577,7 @@ import { SEO } from "astro-seo";
 		color: rgba(0, 0, 0, 0.6);
 		padding-top: 80px;
 	}
+
 	.introduction-name {
 		font-weight: 700;
 		font-size: 6vw;
@@ -374,6 +585,7 @@ import { SEO } from "astro-seo";
 		color: rgba(0, 0, 0, 0.86);
 		padding-top: 40px;
 	}
+	
 	.introduction-description {
 		font-weight: 500;
 		font-size: 4vw;
@@ -381,9 +593,11 @@ import { SEO } from "astro-seo";
 		color: rgba(0, 0, 0, 0.6);
 		padding-top: 80px;
 	}
+
 	hr {
 		margin-top: 120px;
 	}
+
 	.introduction-subtitle {
 		font-weight: 500;
 		font-size: 5vw;
@@ -391,6 +605,7 @@ import { SEO } from "astro-seo";
 		color: rgba(0, 0, 0, 0.6);
 		padding-top: 64px;
 	}
+
 	.introduction-history {
 		font-weight: 400;
 		font-size: 4vw;
@@ -398,12 +613,33 @@ import { SEO } from "astro-seo";
 		color: rgba(0, 0, 0, 0.56);
 		padding-top: 32px;
 	}
+
 	div.introduction-detail p {
 		padding: 8px 0px;
 	}
+
+	.introduction-content-detail {
+		font-weight: 500;
+		font-size: 4.5vw;
+		color: rgba(0, 0, 0, 0.87);
+		padding: 12px 24px;
+		margin: 2vw 0;
+		background: rgba(0, 0, 0, 0.08);
+		border-radius: 40px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.wrap2-clinic-point {
+		margin: 0 8vw;
+	}
+
 	.clinic-point-content {
 		position: relative;
 	}
+
 	.clinic-point-text1 {
 		position: absolute;
 		top: 90vw;
@@ -413,6 +649,7 @@ import { SEO } from "astro-seo";
 		line-height: 10vw;
 		color: #FFFFFF;
 	}
+
 	.clinic-point-text {
 		position: absolute;
 		top: 100vw;
@@ -422,80 +659,89 @@ import { SEO } from "astro-seo";
 		line-height: 35px;
 		color: #FFFFFF;
 	}
+
 	.clinic-point-image {
-		width: 86vw;
+		width: 82vw;
 		height: 120vw;
 		border-radius: 40px;
 		object-fit: cover;
 		box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px;
 	}
+
 	.wrap-image-clinic {
 		display: flex;
 		flex-direction: column;
 		gap: 128px;
+
 	}
+
 	.wrap2-flow {
-		background: #F5F5F7;
+		background: #FFFFFF;
+		display: flex;
+		flex-direction:column;
 		border-radius: 40px;
-		padding-top: 140px;
-		padding-bottom: 80px;
-		padding-left: 4vw;
-		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
+		padding: 64px 0;
+		margin: 0 8vw;
 	}
+
 	.clinic-flow-image {
-		width: 72%;
-		padding-top: 160px;
+		width: 100%;
+		padding-top: 80px;
 		padding-bottom: 80px;
 		object-fit: cover;
-		padding-left: 9vw;
 	}
+
 	.flow-description {
 		font-weight: 500;
 		font-size: 4vw;
 		line-height: 5vw;
 		color: rgba(0, 0, 0, 0.6);
-		padding: 16px 64px;
+		padding: 16px 0;
+		text-align: center;
 	}
+
 	.wrap2-treatment {
-		border-radius: 40px;
-		padding-top: 140px;
-		padding-bottom: 80px;
+		padding: 64px 8vw;
 	}
-	.wrap-row-treatment {
+
+	.wrap2-treatment summary {
+		font-weight: 500;
+		font-size: 4vw;
+		line-height: 5vw;
+		color: rgba(0, 0, 0, 0.8);
+		margin:4vw 0;
+	}
+
+	.wrap2-treatment span {
+		font-weight: 500;
+		font-size: 2.5vw;
+		line-height: 5vw;
+		color: rgba(0, 0, 0, 0.6);
+		margin:4vw 0;
+	}
+
+	.treatment-content-detail {
+		font-weight: 500;
+		font-size: 4.5vw;
+		color: rgba(0, 0, 0, 0.87);
+		padding: 12px 24px;
+		margin: 2vw 0;
+		background: rgba(0, 0, 0, 0.08);
+		border-radius: 40px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		padding-bottom: 64px;
-		gap: 7vw;
+		justify-content: space-between;
 	}
-	.treatment-image {
-		width: 40vw;
-		height: 40vw;
-		border-radius: 40px;
-		object-fit: cover;
-		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
-	}
-	.treatment-sub-title {
-		font-weight: 500;
-		font-size: 5vw;
-		line-height: 4vw;
-		color: rgba(0, 0, 0, 0.87);
-		padding-top: 40px;
-	}
-	.treatment-description {
-		font-weight: 400;
-		font-size: 3vw;
-		line-height: 4vw;
-		color: rgba(0, 0, 0, 0.87);
-		padding-top: 24px;
-	}
+
 	.map-content {
 		font-weight: 500;
 		font-size: 4vw;
 		line-height: 6vw;
 		color: rgba(0, 0, 0, 0.64);
-		padding-bottom: 12px;
+		padding: 12px 0;
 	}
+
 	.map-subtitle {
 		font-weight: 700;
 		font-size: 5vw;
@@ -503,426 +749,352 @@ import { SEO } from "astro-seo";
 		padding-top: 64px;
 		padding-bottom: 40px;
 	}
+
 	.map-content-detail {
 		font-weight: 500;
 		font-size: 4.5vw;
 		color: rgba(0, 0, 0, 0.87);
-		padding-top: 32px;
-		padding-bottom: 40px;
+		padding: 12px 24px;
+		margin: 2vw 0;
+		background: rgba(0, 0, 0, 0.08);
+		border-radius: 40px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
 	}
+
+	.map-content-detail span {
+		font-size: 3vw;
+	}
+
+	summary {
+		display: block;
+		list-style: none;
+	}
+
+	/* 一部ブラウザで消えなかった場合は以下も追記 */
+	summary::-webkit-details-marker {
+		display:none;
+	}
+
+	.arrow {
+		position: relative;
+	}
+
 	.clinic-info-content {
 		padding-bottom: 64px;
 		display: flex;
 		flex-direction: column;
 		gap: 64px;
 	}
+
 	.clinic-info {
 		padding-top: 120px;
 		padding-bottom: 120px;
 	}
-	.wrap2-footer {
-		background: #F5F5F7;
+
+	.wrap3-footer {
+		background: #FFFFFF;
 		padding: 64px 64px 200px 64px;
 	}
+
+	.googlemap {
+		padding-top: 6vw;
+	}
+
 	.calender-image {
 		width: 100%;
 		padding-bottom: 120px;
 	}
-	}
+
 	@media screen and (min-width: 1000px) {
-	body {
-		font-family: 'Noto Sans JP', sans-serif;
-		width: 100vw;
-		display: flex;
-		flex-direction:column;
-		align-items: center;
-	}
-	.wrap1 {
-		background: #F5F5F7;
-		display: flex;
-		flex-direction: column;
-		padding: 64px 500px;
-		gap: 240px;
-	}
-	.wrap2 {
-		display: flex;
-		flex-direction: column;
-		padding: 240px 60px;
-		gap: 240px;
-	}
-	iframe { 
-		width: 86vw;
-		height: 30vh; 
-	}
+
 	.title {
-		font-weight: 700;
-		font-size: 2.5vw;
-		color: rgba(0, 0, 0, 0.87);
-		position: relative;
-		left: 0vw;
-		padding-bottom: 8vw;
+		font-size: 3vw;
+		padding-top: 6vh;
+		padding-bottom: 8vh;
 	}
+	
+	.wrap1 {
+		gap: 0px;
+		padding: 8vw;
+	}
+
+	.wrap2 {
+		gap: 0;
+		padding-top: 80px;
+		padding-bottom: 0;
+	}
+
+
+	.header-label {
+		height: auto;
+	}
+
 	.header-label {
 		background: #2687FF;
 		position: fixed;
-		height: 5vw;
-		left: 0%;
-		right: 0%;
-		top: 0px;
+		width: 100vw;
 		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 0;
+		gap: 0.5vh;
 	}
+
 	.header-label-text {
-		position: absolute;
-		height: 4px;
-		left: 38px;
-		right: 37px;
-		top:12px;
+		position: relative;
 		font-weight: 700;
-		font-size: 1vw;
-		line-height: 1.5vw;
+		font-size: 1.3vw;
+		line-height: 5vw;
 		text-align: center;
 		color: #F5F5F7;
 	}
-	.main-image {
-		position: relative;
-		height: 64vh;
-		left: 0px;
-		display:-webkit-flex;
-		display:-ms-flexbox;
-		display: flex;
-		flex-direction:column;
-		align-items: center;
-	}
-	.main-image-content {
-		width: 100vw;
-		height: 80vh;
-		object-fit: cover;
-	}
-	.main-image-text1 {
-		position: absolute;
-		top: 20vh;
-		left: 32vw;
-		font-weight: 900;
-		font-size: 3vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-	}
-	.main-image-text2 {
-		position: absolute;
-		top: 30vh;
-		left: 32vw;
-		font-weight: 900;
-		font-size: 3vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-	}
-	.main-image-description1 {
-		position: absolute;
-		top: 42vh;
-		left: 34vw;
-		font-weight: 900;
-		font-size: 3vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-	}
-	.main-image-description2 {
-		position: absolute;
-		top: 51vh;
-		left: 33vw;
-		font-weight: 500;
-		font-size: 1.5vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-	}
-	.main-image-description3 {
-		position: absolute;
-		top: 57vh;
-		left: 44vw;
-		font-weight: 700;
-		font-size: 1.5vw;
-		line-height: 12vw;
-		padding-top: 2vw;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-	}
-	.main-logo {
-		position: absolute;
-		top: 17vh;
-		height: 6vw;
-		left: 28vw;
-	}
-	.button-body {
-		position: fixed;
-		bottom: 6vh;
-		width: 140px;
-		height: 50px;
+
+	.header-nav {
 		display: flex;
 		flex-direction: row;
+		gap: 12vw;
+		padding-bottom: 2vh;
+	}
+
+	.header-nav a {
+		flex: 1; /* これが重要！ */
+		font-size: 1vw;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		justify-content: center;
-		align-items: center;
-		padding: 16px 32px;
-		background: rgba(255, 255, 255, 0.8);
-		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-		backdrop-filter: blur(4px);
-		border-radius: 120px;
-		z-index: 2;
+		gap: 1vh;
 	}
-	.button-content1 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 0px;
-		padding-bottom: 24px;
-		padding-right: 20px;
-		width: 100%;
-		height: 100%;
+
+	.header-nav img {
+		width: 1.5vw;
+	} 
+
+	.main-bg {
+		height: 85vh;
 	}
-	.button-content2 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 0px;
-		padding-bottom: 16px;
-		padding-right: 4px;
-		width: 100%;
-		height: 100%;
+
+	.main-image {
+		height: 85vh;
 	}
-	.button-text1 {
-		font-weight: 500;
-		font-size: 14px;
-		color: rgba(0, 0, 0, 0.87);
-		padding-top: 12px;
+
+	.main-logo {
+		height: 10vw;
+		position: relative;
 	}
-	.button-text2 {
-		font-weight: 500;
-		font-size: 12px;
-		color: rgba(0, 0, 0, 0.87);
-		padding-top: 12px;
-	}
-	.button-image {
-		width: 24px;
-		padding-top: 12px;
-	}
-	.wrap-item {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start; 	
-	}
-	.wrap2-notification {
-		padding-top: 140px;
-	}
-	.twitter-timeline {
-		border-radius: 40px;
-	}
-	.wrap2-introduction {
-		background: #FFFFFF;
-		border-radius: 40px;
-		padding-top: 80px;
-		padding-bottom: 120px;
-		padding-left: 4vw;
-		padding-right: 4vw;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start; 	
-	}
-	.introduction-image {
-		width: 32vw;
-		height: 56vh;
-		object-fit: cover;
-		border-radius: 40px;
-		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
-	}
-	.introduction-job {
-		font-weight: 500;
+
+	.main-image-text1 {
+		position: relative;
+		top:4vh;
 		font-size: 2vw;
-		line-height: 4vw;
-		color: rgba(0, 0, 0, 0.6);
+	}
+
+	.main-image-text2 {
+		position: relative;
+		top:-2vh;
+		font-size: 2vw;
+	}
+
+	.main-image-description1 {
+		position: relative;
+		top:-6vh;
+		font-size: 3.5vw;
+	}
+
+	.main-image-description2 {
+		position: relative;
+		top:0vh;
+		font-size: 1.5vw;
+	}
+
+	.main-image-description3 {
+		position: relative;
+		top:3vh;
+		font-size: 1.5vw;
+	}
+
+	.main-image-description4 span {
+		font-size: 1.5vw;
+	}
+
+	.main-image-description4 {
+		position: relative;
+		top:6vh;
+		font-size: 2vw;
+	}
+
+	.notify-frame {
+		position: relative;
+		left: 14vw;
+		width: 80%;
+	}
+
+	.wrap1-notification {
+		padding-top: 0px;
+	}
+
+	.wrap1-introduction {
+		display: flex;
+		flex-direction: row;
+		gap: 4vw;
+	}
+
+	.wrap1-intro-pc {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.wrap1-intro-pc-sub {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.introduction-image {
+		width: 420px;
+		height: 480px;
+		object-fit: cover;
+		border-radius: 12px;
+		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+		/* padding-bottom: 24px; */
+	}
+
+	.introduction-job {
+		font-size: 2.5vw;
+		padding-top: 24px;
+	}
+
+	.introduction-name {
+		font-size: 3vw;
+	}
+	
+	.introduction-description {
+		font-size: 1.5vw;
+		line-height: 6vh;
 		padding-top: 40px;
 	}
-	.introduction-name {
-		font-weight: 700;
-		font-size: 2.5vw;
-		line-height: 4vw;
-		color: rgba(0, 0, 0, 0.86);
-		padding-top: 20px;
-	}
-	.introduction-description {
-		font-weight: 500;
-		font-size: 1.5vw;
-		line-height: 3vw;
-		color: rgba(0, 0, 0, 0.6);
-		padding-top: 64px;
-	}
-	hr {
-		margin-top: 120px;
-	}
+
 	.introduction-subtitle {
-		font-weight: 500;
 		font-size: 2vw;
-		line-height: 2vw;
-		color: rgba(0, 0, 0, 0.6);
-		padding-top: 64px;
+		padding-top: 180px;
 	}
+
 	.introduction-history {
-		font-weight: 400;
 		font-size: 1.5vw;
-		line-height: 3vw;
-		color: rgba(0, 0, 0, 0.56);
-		padding-top: 32px;
+		padding-top: 24px;
+		line-height: 4vh;
 	}
+
 	div.introduction-detail p {
 		padding: 8px 0px;
 	}
-	.clinic-point-content {
-		position: relative;
-	}
-	.clinic-point-text1 {
-		position: absolute;
-		top: 26vw;
-		left: 3vw;
-		font-weight: 700;
+
+	.introduction-content-detail {
+		padding: 8px px;
+		margin: 2vw 0;
 		font-size: 2vw;
-		line-height: 4vw;
-		color: #FFFFFF;
 	}
-	.clinic-point-text {
-		position: absolute;
-		top: 30vw;
-		left: 2vw;
-		font-weight: 700;
-		font-size: 2.5vw;
-		line-height: 35px;
-		color: #FFFFFF;
+
+	.arrow {
+		width: 4vw;
 	}
+
+	.wrap-image-clinic {
+		flex-direction: row;
+		gap: 38px;
+	}
+
 	.clinic-point-image {
 		width: 26vw;
-		height: 38vw;
+		height: 40vw;
 		border-radius: 40px;
 		object-fit: cover;
 		box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px;
 	}
-	.wrap-image-clinic {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 88px;
+
+	.clinic-point-text1 {
+		position: absolute;
+		top: 18vw;
+		left: 3vw;
+		font-size: 4vw;
 	}
-	.wrap2-clinic-point {
-		padding-top: 0px;
-		padding-bottom: 0px;
-		padding-left: 10vw;
-		padding-right: 10vw;
+
+	.clinic-point-text {
+		position: absolute;
+		top: 32vw;
+		left: 3vw;
+		font-size: 4vw;
 	}
-	.wrap2-flow {
-		background: #F5F5F7;
-		border-radius: 40px;
-		padding: 100px 1vw;
-		margin: 24px 36vw;
-		flex-direction: column;
-		justify-content: flex-start; 	
-		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
-	}
+
 	.clinic-flow-image {
-		width: 52%;
-		padding-top: 60px;
-		padding-bottom: 80px;
-		padding-left: 8.5vw;
+		width: 80%;
+		padding-left: 10%;
 		object-fit: cover;
-	}
-	.flow {
-		padding-left: 40px;
-	}
-	.flow-description {
-		font-weight: 500;
-		font-size: 1.5vw;
-		line-height: 3vw;
-		color: rgba(0, 0, 0, 0.6);
-		padding: 16px 64px;
-	}
-	.treatment {
-		padding-left: 28vw;
-	}
-	.wrap2-treatment {
-		border-radius: 40px;
-		padding-top: 64x;
 		padding-bottom: 40px;
-		padding-left:  8vw;
-		padding-right:  8vw;
 	}
-	.wrap-row-treatment {
+
+	.wrap2-flow {
+		padding: 64px 0 24px 0;
+	}
+
+	.flow-description {
+		font-size: 2vw;
+		line-height: 3vw;
+	}
+
+	.wrap2-treatment-pc {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
-		padding: 64px 400px;
-		gap: 7vw;
+		gap: 2vw;
 	}
-	.treatment-image {
-		width: 16vw;
-		height: 16vw;
-		border-radius: 40px;
-		object-fit: cover;
-		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16));
-	}
-	.treatment-sub-title {
+
+	.treatment-content-detail {
 		font-weight: 500;
-		font-size: 2vw;
-		line-height: 4vw;
-		color: rgba(0, 0, 0, 0.87);
-		padding-top: 40px;
+		font-size: 1.5vw !important;
+		padding: 6px 24px;
+		margin: 2vw 0;
 	}
-	.treatment-description {
-		font-weight: 400;
-		font-size: 1vw;
-		color: rgba(0, 0, 0, 0.87);
-		padding-top: 24px;
+
+	details[open] {
+    	width: 44vw;
 	}
-	.map-content {
-		font-weight: 500;
-		font-size: 1.5vw;
-		line-height: 3vw;
-		color: rgba(0, 0, 0, 0.64);
-		padding-bottom: 12px;
-	}
+
 	.map-subtitle {
-		font-weight: 700;
 		font-size: 2.5vw;
-		color: rgba(0, 0, 0, 0.87);
-		padding-bottom: 32px;
-		padding-top: 24px;
+		padding-top: 32px;
 	}
-	.map-content-detail {
-		font-weight: 500;
+
+	.map-content {
 		font-size: 2vw;
-		color: rgba(0, 0, 0, 0.87);
-		padding-bottom: 24px;
 	}
-	.clinic-info-content {
-		padding-bottom: 32px;
+
+	.map-content-detail {
+		font-size: 2vw;
+	}
+
+	.map-content-detail span {
+		font-size: 1.5vw;
+	}
+
+	.wrap3-footer {
+		padding: 32px 64px 200px 64px;
+	}
+
+	.wrap3-footer-pc {
 		display: flex;
-		flex-direction: column;
-		gap: 64px;
+		flex-direction: row;
+		gap: 4vw;
 	}
-	.clinic-info {
-		width: 40vw;;
-	}
-	.wrap2-footer {
-		background: #F5F5F7;
-		padding: 120px 32vw;
-	}
-	.wrap-footer-pc {
-		margin: 24px 18vw;
-	}
-	.googlemap {
-		width: 50vw;
-	}
+
+	.calender-image {
+    	width: 44vw;
+	}	
 }
 </style>
 </html>
