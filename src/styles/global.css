@@ -27,7 +27,12 @@ body {
 
   a {
     text-decoration: none;
-  }   
+  } 
+
+  a:visited {
+    color: #595656;
+    text-decoration: none;
+  }    
   
   article,aside,details,figcaption,figure,
   footer,header,hgroup,menu,nav,section {
