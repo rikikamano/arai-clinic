@@ -42,6 +42,7 @@ import { SEO } from "astro-seo";
 		<section class="wrap1-notification">
 			<p class="notify title" id="notify">お知らせ</p>
 			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true" title="お知らせ"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
+			<span class="dli-arrow-down"></span>
 		</section>
 		<p class="title" id="introduction">院長紹介</p>
 		<div class="wrap1-intro-pc-sub"><img class="introduction-image" src="./images/introduction.webp" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像"></div>
@@ -142,7 +143,7 @@ import { SEO } from "astro-seo";
 						<br><br>				
 						●その他
 						<div class="introduction-detail">
-						<p>包茎手術　100</p>
+						<p>包茎手術 100</p>
 						<p>精巣固定術(小児の停留精巣の手術) 50</p>
 						<p>高位除睾術(精巣癌の手術) 40</p>
 						<p>前立腺生検(前立腺の組織検査) 1500</p>
@@ -571,6 +572,34 @@ import { SEO } from "astro-seo";
 		width: 80%;
 	}
 
+	.dli-arrow-down {
+	display: inline-block;
+	vertical-align: middle;
+	color: #333;
+	line-height: 1;
+	position: relative;
+	width: 0.5em;
+  	height: 5em;
+	top: -140px;
+	left: 86%;
+	background: currentColor;
+	}
+
+	.dli-arrow-down::before {
+	content: '';
+	width: 3em;
+	height: 3em;
+	border: 0.5em solid currentColor;
+	border-top: 0;
+	border-right: 0;
+	transform: rotate(-45deg);
+	transform-origin: bottom left;
+	position: absolute;
+	left: 50%;
+	bottom: -0.05em;
+	box-sizing: border-box;
+	}
+
 	.wrap1-introduction {
 		background: #FFFFFF;
 		border-radius: 40px;
@@ -956,6 +985,31 @@ import { SEO } from "astro-seo";
 		left: 14vw;
 		height: 800px ;
 		width: 80%;
+	}
+
+	.dli-arrow-down {
+	display: inline-block;
+	position: relative;
+	width: 0.5em;
+  	height: 8em;
+	top: -160px;
+	left: 6%;
+	background: currentColor;
+	}
+
+	.dli-arrow-down::before {
+	content: '';
+	width: 3em;
+	height: 3em;
+	border: 0.5em solid currentColor;
+	border-top: 0;
+	border-right: 0;
+	transform: rotate(-45deg);
+	transform-origin: bottom left;
+	position: absolute;
+	left: 50%;
+	bottom: -0.05em;
+	box-sizing: border-box;
 	}
 
 	.wrap1-notification {
