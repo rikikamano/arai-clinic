@@ -6,7 +6,7 @@ import { SEO } from "astro-seo";
 <html lang="ja">
   <head>
   <meta charset="UTF-8">
-  <!-- <meta name=viewport content=width=device-width> -->
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
   <SEO
       title="あらい腎泌尿器科クリニック｜三田市のアットホームな泌尿器科、いわもと泌尿器科から承継いたしました"
       description="あらい腎泌尿器科クリニックは大阪大学医学部卒の医師が院長をつとめる泌尿器科です。男性、女性子供問わず新三田・三田市・南ウッディタウンで患者様に寄り添った治療を目指していわもと泌尿器科から継承後診療しております。お気軽にご来診ください。" 
@@ -16,6 +16,29 @@ import { SEO } from "astro-seo";
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&display=swap" rel="stylesheet"> -->
 </head>
 <body>
+	<script>
+        // get all iframes that were parsed before this tag
+        var iframes = document.getElementsByTagName("iframe");
+
+        for (let i = 0; i < iframes.length; i++) {
+            var url = iframes[i].getAttribute("src");
+            if (url.startsWith("https://docs.google.com/document/d/")) {
+                // create div and replace iframe
+                let d = document.createElement('div');
+                d.classList.add("embedded-doc"); // optional
+                iframes[i].parentElement.replaceChild(d, iframes[i]);
+
+                // CORS request
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url, true);
+                xhr.onload = function() {
+                    // display response
+                    d.innerHTML = xhr.responseText;
+                };
+                xhr.send();
+            }
+        }
+    </script>
 	<header class="header-label">
 		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
 		<section class="header-nav">
@@ -41,7 +64,7 @@ import { SEO } from "astro-seo";
 	<section class="wrap1">
 		<section class="wrap1-notification">
 			<p class="notify title" id="notify">お知らせ</p>
-			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true" title="お知らせ"></iframe>	 <style>  iframe { width: 100%; height: 40vw; border-radius: 40px;}  </style>	
+			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vR_bQSOH4jttvF_V6h58azlZIvDs6ACFDbzeOg8RtsEwcnkHAQN3XLxGkTjGXQSV2CJ1z_qnudCfJKw/pub?embedded=true" title="お知らせ"></iframe> <style>  iframe { font-size:200px;}  </style>	
 			<span class="dli-arrow-down"></span>
 		</section>
 		<p class="title" id="introduction">院長紹介</p>
@@ -395,16 +418,16 @@ import { SEO } from "astro-seo";
 		background: #FFFFFF;
 		display: flex;
 		flex-direction: column;
-		padding: 64px;
-		gap: 120px;
+		padding: 24px;
+		gap: 32px;
 	}
 
 	.wrap2 {
 		display: flex;
 		flex-direction: column;
-		padding-top: 240px;
-		padding-bottom: 120px;
-		gap: 120px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		gap: 32px;
 	}
 
 	.title {
@@ -413,8 +436,8 @@ import { SEO } from "astro-seo";
 		color: rgba(0, 0, 0, 0.87);
 		position: relative;
 		left: 0vw;
-		padding-top:6vw;
-		padding-bottom:8vw;
+		padding-top:32px;
+		padding-bottom:32px;
 	}
 
 	.header-label {
@@ -563,14 +586,54 @@ import { SEO } from "astro-seo";
 	}
 
 	.wrap1-notification {
-		padding-top: 64px;
+		padding-top: 32px;
 	}
 
 	.notify-frame {
 		position: relative;
 		height:40vh ;
-		width: 80%;
+		width: 100%;
+		font-size:12px;
+
+		span {
+			font-size: 12px;
+		}
+
+		.c2 {
+			font-size: 12pt;
+			padding: 0 0 0 0;
+		}
+		.c2 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 13pt;
+        font-family: "Arial";
+        font-style: normal
+    }
+
+    .c1 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c3 {
+        background-color: #ffffff;
+        max-width: 451.4pt;
+        /* padding:72pt 72pt 72pt 72pt; */
+    }
 	}
+
+
+		.c2 {
+			font-size: 12pt;
+			padding: 0 0 0 0;
+		}
 
 	.dli-arrow-down {
 	display: inline-block;
@@ -578,8 +641,8 @@ import { SEO } from "astro-seo";
 	color: #333;
 	line-height: 1;
 	position: relative;
-	width: 0.5em;
-  	height: 5em;
+	width: 0.2em;
+  	height: 3em;
 	top: -140px;
 	left: 86%;
 	background: currentColor;
@@ -587,9 +650,9 @@ import { SEO } from "astro-seo";
 
 	.dli-arrow-down::before {
 	content: '';
-	width: 3em;
-	height: 3em;
-	border: 0.5em solid currentColor;
+	width: 2em;
+	height: 2em;
+	border: 0.2em solid currentColor;
 	border-top: 0;
 	border-right: 0;
 	transform: rotate(-45deg);
@@ -617,7 +680,7 @@ import { SEO } from "astro-seo";
 		font-size: 5vw;
 		line-height: 4vw;
 		color: rgba(0, 0, 0, 0.6);
-		padding-top: 80px;
+		padding-top: 24px;
 	}
 
 	.introduction-name {
@@ -625,7 +688,7 @@ import { SEO } from "astro-seo";
 		font-size: 6vw;
 		line-height: 4vw;
 		color: rgba(0, 0, 0, 0.86);
-		padding-top: 40px;
+		padding-top: 24px;
 	}
 	
 	.introduction-description {
@@ -633,7 +696,7 @@ import { SEO } from "astro-seo";
 		font-size: 4vw;
 		line-height: 6vw;
 		color: rgba(0, 0, 0, 0.6);
-		padding-top: 80px;
+		padding-top: 40px;
 	}
 
 	hr {
@@ -645,7 +708,7 @@ import { SEO } from "astro-seo";
 		font-size: 5vw;
 		line-height: 4vw;
 		color: rgba(0, 0, 0, 0.6);
-		padding-top: 64px;
+		padding-top: 32px;
 	}
 
 	.introduction-history {
@@ -713,7 +776,7 @@ import { SEO } from "astro-seo";
 	.wrap-image-clinic {
 		display: flex;
 		flex-direction: column;
-		gap: 128px;
+		gap: 64px;
 
 	}
 
@@ -722,14 +785,14 @@ import { SEO } from "astro-seo";
 		display: flex;
 		flex-direction:column;
 		border-radius: 40px;
-		padding: 64px 0;
+		padding: 24px 0;
 		margin: 0 8vw;
 	}
 
 	.clinic-flow-image {
 		width: 100%;
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: 32px;
+		padding-bottom: 32px;
 		object-fit: cover;
 	}
 
@@ -743,12 +806,12 @@ import { SEO } from "astro-seo";
 	}
 
 	.wrap2-treatment {
-		padding: 64px 8vw;
+		padding: 32px 8vw;
 	}
 
 	.wrap2-treatment summary {
 		font-weight: 500;
-		font-size: 4vw;
+		font-size: 3.8vw;
 		line-height: 5vw;
 		color: rgba(0, 0, 0, 0.8);
 		margin:4vw 0;
@@ -756,15 +819,15 @@ import { SEO } from "astro-seo";
 
 	.wrap2-treatment span {
 		font-weight: 500;
-		font-size: 2.5vw;
+		font-size: 3.5vw;
 		line-height: 5vw;
 		color: rgba(0, 0, 0, 0.6);
-		margin:4vw 0;
+		margin: 3vw 0;
 	}
 
 	.treatment-content-detail {
 		font-weight: 500;
-		font-size: 4.5vw;
+		font-size: 5.5vw;
 		color: rgba(0, 0, 0, 0.87);
 		padding: 12px 24px;
 		margin: 2vw 0;
@@ -788,15 +851,15 @@ import { SEO } from "astro-seo";
 		font-weight: 700;
 		font-size: 5vw;
 		color: rgba(0, 0, 0, 0.87);
-		padding-top: 64px;
-		padding-bottom: 40px;
+		padding-top: 32px;
+		padding-bottom: 32px;
 	}
 
 	.map-content-detail {
 		font-weight: 500;
 		font-size: 4.5vw;
 		color: rgba(0, 0, 0, 0.87);
-		padding: 12px 24px;
+		padding: 8px 16px;
 		margin: 2vw 0;
 		background: rgba(0, 0, 0, 0.08);
 		border-radius: 40px;
@@ -822,6 +885,8 @@ import { SEO } from "astro-seo";
 
 	.arrow {
 		position: relative;
+		width: 40px;
+		height: 40px;
 	}
 
 	.clinic-info-content {
@@ -832,17 +897,18 @@ import { SEO } from "astro-seo";
 	}
 
 	.clinic-info {
-		padding-top: 120px;
-		padding-bottom: 120px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 	}
 
 	.wrap3-footer {
 		background: #FFFFFF;
-		padding: 64px 64px 200px 64px;
+		padding: 32px 32px 64px 32px;
 	}
 
 	.googlemap {
 		padding-top: 6vw;
+		width: 100%;
 	}
 
 	.calender-image {
@@ -991,9 +1057,9 @@ import { SEO } from "astro-seo";
 	display: inline-block;
 	position: relative;
 	width: 0.5em;
-  	height: 8em;
+  	height: 5em;
 	top: -160px;
-	left: 6%;
+	left: 88%;
 	background: currentColor;
 	}
 
@@ -1081,6 +1147,7 @@ import { SEO } from "astro-seo";
 
 	.arrow {
 		width: 4vw;
+		height: 4vw;
 	}
 
 	.wrap-image-clinic {
