@@ -64,7 +64,7 @@ import { SEO } from "astro-seo";
 	<section class="wrap1">
 		<section class="wrap1-notification">
 			<p class="notify title" id="notify">お知らせ</p>
-			<iframe class="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true" title="お知らせ"></iframe> <style>  iframe { font-size:200px;}  </style>	
+			<iframe src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>			
 			<span class="dli-arrow-down"></span>
 		</section>
 		<p class="title" id="introduction">院長紹介</p>
@@ -592,48 +592,13 @@ import { SEO } from "astro-seo";
 	.notify-frame {
 		position: relative;
 		height:40vh ;
-		width: 100%;
+		width: 64%;
 		font-size:12px;
-
-		span {
-			font-size: 12px;
-		}
-
-		.c2 {
-			font-size: 12pt;
-			padding: 0 0 0 0;
-		}
-		.c2 {
-        color: #000000;
-        font-weight: 400;
-        text-decoration: none;
-        vertical-align: baseline;
-        font-size: 13pt;
-        font-family: "Arial";
-        font-style: normal
-    }
-
-    .c1 {
-        padding-top: 0pt;
-        padding-bottom: 0pt;
-        line-height: 1.15;
-        orphans: 2;
-        widows: 2;
-        text-align: left
-    }
-
-    .c3 {
-        background-color: #ffffff;
-        max-width: 451.4pt;
-        /* padding:72pt 72pt 72pt 72pt; */
-    }
 	}
 
-
-		.c2 {
-			font-size: 12pt;
-			padding: 0 0 0 0;
-		}
+	.embedded-doc {
+		width: 70%;
+	}
 
 	.dli-arrow-down {
 	display: inline-block;
