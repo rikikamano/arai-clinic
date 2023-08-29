@@ -17,28 +17,35 @@ import { SEO } from "astro-seo";
 </head>
 <body>
 	<script>
-        // get all iframes that were parsed before this tag
-        var iframes = document.getElementsByTagName("iframe");
-
-        for (let i = 0; i < iframes.length; i++) {
-            var url = iframes[i].getAttribute("src");
-            if (url.startsWith("https://docs.google.com/document/d/")) {
-                // create div and replace iframe
-                let d = document.createElement('div');
-                d.classList.add("embedded-doc"); // optional
-                iframes[i].parentElement.replaceChild(d, iframes[i]);
-
-                // CORS request
-                var xhr = new XMLHttpRequest();
-                xhr.open('GET', url, true);
-                xhr.onload = function() {
-                    // display response
-                    d.innerHTML = xhr.responseText;
-                };
-                xhr.send();
-            }
-        }
-    </script>
+		// get all iframes that were parsed before this tag
+		var iframes = document.getElementsByTagName("iframe");
+	
+		for (let i = 0; i < iframes.length; i++) {
+			var url = iframes[i].getAttribute("src");
+			if (url.startsWith("https://docs.google.com/document/d/")) {
+				// create div and replace iframe
+				let d = document.createElement('div');
+				d.classList.add("embedded-doc"); // optional
+				iframes[i].parentElement.replaceChild(d, iframes[i]);
+	
+				// CORS request
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', url, true);
+				xhr.onload = function() {
+					// display response
+					d.innerHTML = xhr.responseText;
+	
+					// Apply padding: 0 to elements with class 'c2' inside the div
+					let c2Elements = d.getElementsByClassName('c4');
+					for(let elem of c2Elements) {
+						elem.style.padding = "32pt 8pt 32pt 8pt";
+					}
+				};
+				xhr.send();
+			}
+		}
+	</script>
+	
 	<header class="header-label">
 		<p class="header-label-text">ご来院の際はおしっこをためてお越しください</p>
 		<section class="header-nav">
@@ -64,7 +71,7 @@ import { SEO } from "astro-seo";
 	<section class="wrap1">
 		<section class="wrap1-notification">
 			<p class="notify title" id="notify">お知らせ</p>
-			<iframe src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>			
+			<iframe id="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>			
 			<span class="dli-arrow-down"></span>
 		</section>
 		<p class="title" id="introduction">院長紹介</p>
@@ -589,15 +596,8 @@ import { SEO } from "astro-seo";
 		padding-top: 32px;
 	}
 
-	.notify-frame {
-		position: relative;
-		height:40vh ;
-		width: 64%;
-		font-size:12px;
-	}
-
 	.embedded-doc {
-		width: 70%;
+		width: 120%;
 	}
 
 	.dli-arrow-down {
@@ -608,7 +608,7 @@ import { SEO } from "astro-seo";
 	position: relative;
 	width: 0.2em;
   	height: 3em;
-	top: -140px;
+	top: -30px;
 	left: 86%;
 	background: currentColor;
 	}
@@ -883,11 +883,6 @@ import { SEO } from "astro-seo";
 
 	@media screen and (min-width:720px) {
 
-	.notify-frame {
-		position: relative;
-		height:780px ;
-		width: 100%;
-	}
 
 	}
 
@@ -1011,12 +1006,6 @@ import { SEO } from "astro-seo";
 		font-size: 2vw;
 	}
 
-	.notify-frame {
-		position: relative;
-		left: 14vw;
-		height: 800px ;
-		width: 80%;
-	}
 
 	.dli-arrow-down {
 	display: inline-block;

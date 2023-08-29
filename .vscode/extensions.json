@@ -1,4 +1,7 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "figma.figma-vscode-extension"
+  ],
   "unwantedRecommendations": []
 }
