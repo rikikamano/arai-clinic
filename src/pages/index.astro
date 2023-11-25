@@ -68,13 +68,13 @@ import { SEO } from "astro-seo";
 		<span class="main-image-description4"><span>大阪大学医学部卒業</span> 院長 新井浩樹</span>
 	</section>
 
-	<section class="wrap1-notification">
+	<section class="wrap-notification">
 		<p class="notify title" id="notify">お知らせ</p>
-		<span class="dli-arrow-down"></span>
+		<!-- <span class="dli-arrow-down"></span> -->
 		<iframe id="notify-frame" src="https://docs.google.com/document/d/e/2PACX-1vQJJ4VxMRFuiApDzM-ZHbk6FJaYkZrwiaEqmk6ia2CYW5jLm0OPrx7t_Vggah960-Mm7q7vswVrjZnu/pub?embedded=true"></iframe>			
 	</section>
 
-	<section class="wrap1">
+	<section class="wrap-intro">
 		<p class="title" id="introduction">院長紹介</p>
 		<div class="wrap1-intro-pc-sub"><img class="introduction-image" src="./images/introduction.webp" alt="あらい腎泌尿器科クリニックの院長新井浩樹の画像"></div>
 		<section class="wrap1-introduction">
@@ -459,12 +459,14 @@ import { SEO } from "astro-seo";
   		color:#FFFFFF;
 	}
 
-	.wrap1 {
+	.wrap-intro {
 		background: #FFFFFF;
 		display: flex;
 		flex-direction: column;
 		padding: 24px;
 		gap: 32px;
+		margin: 0 8vw;
+
 	}
 
 	.wrap2 {
@@ -630,8 +632,9 @@ import { SEO } from "astro-seo";
 		color: #595656;
 	}
 
-	.wrap1-notification {
+	.wrap-notification {
 		padding-top: 32px;
+		margin: 0 8vw;
 	}
 
 	.embedded-doc {
@@ -1075,10 +1078,9 @@ import { SEO } from "astro-seo";
 	box-sizing: border-box;
 	}
 
-	.wrap1-notification {
-		padding-top: 0px;
-		width: 100vw;
-
+	.wrap-notification {
+		padding-top: 64px;
+		margin: 0 8vw;
 	}
 
 	.wrap1-introduction {
